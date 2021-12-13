@@ -1,29 +1,29 @@
 <template lang="pug">
   div
     Header.header
-
-    //- loading
-    //- Loading.loading(:class="{ active: $store.state.loading }")
-    Nuxt.nuxt-container.overflow-hidden
-
+    Nuxt.nuxt-container
     Footer
+
+    Loading
+    Toast
 
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
+import Loading from '@/components/Loading.vue'
+import Toast from '@/components/Toast.vue'
 
 export default {
-  components: { Header, Footer },
+  components: { Header, Footer, Loading, Toast },
 
-  data() {
-    return {}
+  watch: {
+    $route() {
+      console.log('hello')
+      this.$store.commit('setLoading', true)
+    },
   },
-
-  mounted() {},
-
-  methods: {},
 }
 </script>
 
@@ -41,20 +41,9 @@ export default {
   z-index: 100;
 }
 
-.loading {
-  visibility: hidden;
-  opacity: 0;
-
-  transition: visibility 1s ease, opacity 0.5s linear;
-
-  &.active {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
 .nuxt-container {
   @apply tracking-wider;
+  @apply overflow-hidden;
 
   min-height: calc(100vh - theme('spacing.20'));
 }

@@ -7,11 +7,21 @@
 
       div.mt-5 Page Not Found
 
-      NuxtLink(to="/" rel="nofollow") Back to Home
+      NuxtLink.text-blue-400(to="/" rel="nofollow") Back to Home
 
     //- Footer
 
 </template>
+
+<script>
+export default {
+  mounted() {
+    setTimeout(() => {
+      this.$store.commit('setLoading', false)
+    }, 200)
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .wrapper {
@@ -24,7 +34,7 @@
   align-items: center;
 
   img {
-    max-width: 200px;
+    max-width: 300px;
     margin: 20px;
   }
 }

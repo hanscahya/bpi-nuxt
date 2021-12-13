@@ -1,20 +1,23 @@
-import { gsap, Power4 } from 'gsap/dist/gsap';
-import smoothscroll from 'smoothscroll-polyfill';
+/* eslint-disable no-console */
+
+// import { gsap, Power4 } from 'gsap/dist/gsap'
+import smoothscroll from 'smoothscroll-polyfill'
 
 export default {
   methods: {
-    // hc.js
     convertToIDR(number) {
       // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat
 
       return new Intl.NumberFormat('id-ID', {
         style: 'currency',
         currency: 'IDR',
-      }).format(number);
+      }).format(number)
     },
+
     capitalizeFirstLetter(string) {
-      return string.charAt(0).toUpperCase() + string.slice(1);
+      return string.charAt(0).toUpperCase() + string.slice(1)
     },
+
     forceRerender() {
       /*
         add componentKey -> to data
@@ -22,114 +25,78 @@ export default {
 
         use forceRerender() to rerender the component
       */
-      this.componentKey += 1;
+      this.componentKey += 1
     },
-    isObjectEmpty(obj) {
-      for (var prop in obj) {
-        if (obj.hasOwnProperty(prop)) return false;
-      }
-    
-      return JSON.stringify(obj) === JSON.stringify({});
-    },
-    removeLastSlash(url) {
-      let t = url.split('/');
-      t.pop();
-      return t.join('/');
-    },
-    setGlobalAlert(message, theme, duration) {
-      if (typeof message === 'string') message = this.capitalizeFirstLetter(message);
 
-      this.$bvToast.toast(
-        message || 'Sorry, we have a problem',
-        {
-          // title: `Toaster ${toaster}`,
-          toaster: 'b-toaster-top-center',
-          bodyClass: ['tr--toast', theme || 'warning'],
-          autoHideDelay: duration || 4000,
-          noCloseButton: true,
-          solid: true
-        }
-      );
+    // try lodash
+    // isObjectEmpty(obj) {
+    //   for (const prop in obj) {
+    //     if (obj.hasOwnProperty(prop)) return false
+    //   }
+
+    //   return JSON.stringify(obj) === JSON.stringify({})
+    // },
+
+    removeLastSlash(url) {
+      const t = url.split('/')
+      t.pop()
+      return t.join('/')
     },
+
     scrollToTop() {
-      smoothscroll.polyfill(); // fix bug on Safari, IE, Edge
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      smoothscroll.polyfill() // fix bug on Safari, IE, Edge
+      window.scrollTo({ top: 0, behavior: 'smooth' })
     },
+
     stringToSnake(string) {
       if (string) {
-        let a = string.toLowerCase();
-        let b = a.split(' ');
-        let c = a;
+        const a = string.toLowerCase()
+        const b = a.split(' ')
+        let c = a
 
-        if (b.length > 0) c = b.join('-');
-        return c;
-      }
-      else return null;
+        if (b.length > 0) c = b.join('-')
+        return c
+      } else return null
     },
+
     snakeToString(snake, separator) {
-      let a;
-      let words = snake.split('_');
+      let a
+      const words = snake.split(separator)
 
-      if (words.length === 0) a = snake;
+      if (words.length === 0) a = snake
       else {
-        for (let [i, word] of words.entries()) {
-          words[i] = this.capitalizeFirstLetter(word);
+        for (const [i, word] of words.entries()) {
+          words[i] = this.capitalizeFirstLetter(word)
         }
-        a = words.join(' ');
+        a = words.join(' ')
       }
 
-      return a;
+      return a
     },
+
     windowOpen(url, opt) {
       /*
         for nuxt change windows location
       */
-      if (url.includes('http')) opt = '_blank';
-      window.open(url, opt);
+      if (url.includes('http')) opt = '_blank'
+      window.open(url, opt)
     },
-
 
     // API Request
-    async fetchContent(endpoint) {
+    async fetchJSON(endpoint) {
       try {
-        let response = await this.$axios.get(`${window.location.origin}${endpoint}`);
-        // console.log(response);
-
-        // error
-        if (response.status !== 200) throw new Error(response.data.message);
-
-        // success
-        else return response.data.data;
-
+        const json = await this.$axios.get(endpoint)
+        if (!json) throw new Error(json.data.message)
+        else return json.data
       } catch (error) {
         // API request fatal error
-        console.log(error);
-        this.setGlobalAlert('Sorry, we encounter some error...', 'error', 8000);
+        console.log(error)
+        this.setGlobalAlert(
+          'Sorry, we failed to load content...',
+          'error',
+          8000
+        )
       }
     },
-    async sendEmail(form, feedback) {
-      // validation
-      const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      if (!re.test(String(form.email).toLowerCase())) {
-        this.setGlobalAlert('Email format invalid...');
-      }
-      
-      // send email
-      else {
-        try {
-          const response = feedback ?  await this.$axios.post('/formnewsletter', form) :
-            await this.$axios.post('/formnewsletter/send-email', form);
-  
-          if (!response.data.success) {
-            throw new Error(response.data.message);
-          } else {
-            this.setGlobalAlert('Thank you for your submission. We\'ll be contact you soon!');
-            location.reload();
-          }
-        } catch (error) {
-          this.setGlobalAlert('Opps, an error occured. Please try again later...');
-        }
-      }
-    }
-  }
+  },
 }
