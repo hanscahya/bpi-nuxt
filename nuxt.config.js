@@ -1,4 +1,11 @@
 export default {
+  // Convert to Static Site Generation
+  target: 'static',
+  generate: {
+    // fix netlify redirecting to 404 not found
+    fallback: true,
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'bpi-nuxt',
@@ -28,10 +35,12 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
+    // https://content.nuxtjs.org/installation
+    '@nuxt/content',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    // https://go.nuxtjs.dev/bootstrap
+    'bootstrap-vue/nuxt',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
