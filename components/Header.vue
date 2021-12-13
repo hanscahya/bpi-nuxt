@@ -10,8 +10,7 @@
           :key="menuIndex"
           :class="{ active: $route.path === menu.link }"
         )
-          div.py-1.menu-item
-            nuxt-link.px-3(:to="menu.link") {{ menu.label }}
+          div.py-1.menu-item.px-3(@click="$router.push(menu.link)") {{ menu.label }}
 
         div.p-3
           button.px-4.py-1.rounded-full.bg-green-500.text-white BPI Application
@@ -56,14 +55,17 @@ export default {
   @apply overflow-hidden;
   cursor: pointer;
 
-  &.active .menu-item {
+  .menu-item {
     @apply border-b-2;
+    @apply border-white;
+  }
+
+  &.active .menu-item {
     @apply border-blue-200;
   }
 
   &:hover .menu-item {
-    @apply border-b-2;
-    @apply border-blue-200;
+    @apply border-blue-300;
   }
 }
 </style>

@@ -1,4 +1,4 @@
 <template lang="pug">
-  div.flex.justify-center Footer
+  div.container
 
 </template>
