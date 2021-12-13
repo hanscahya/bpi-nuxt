@@ -38,7 +38,7 @@
           :icon="item.icon"
         )
     
-    Gallery(:images="content.section4.images")
+    Gallery.mb-10(:images="content.section4.images")
 
 </template>
 
@@ -111,7 +111,8 @@ export default {
               title: 'Test 1',
               paragraph:
                 'Ipsum ut incididunt aliqua officia anim sint magna laborum. Est reprehenderit occaecat aute ad voluptate id do aliqua sit commodo labore cillum aliquip ullamco.',
-              image: 'https://via.placeholder.com/600x400',
+              image:
+                'https://i.picsum.photos/id/932/600/400.jpg?hmac=-W7QaS8NLuXM7rJdiBDu8NQoyHlr41Lo6JYaFUF6RpU',
               layout: 'default',
               link: '/',
             },
@@ -119,7 +120,8 @@ export default {
               title: 'Test 2',
               paragraph:
                 'Ipsum ut incididunt aliqua officia anim sint magna laborum. Est reprehenderit occaecat aute ad voluptate id do aliqua sit commodo labore cillum aliquip ullamco.',
-              image: 'https://via.placeholder.com/600x400',
+              image:
+                'https://i.picsum.photos/id/932/600/400.jpg?hmac=-W7QaS8NLuXM7rJdiBDu8NQoyHlr41Lo6JYaFUF6RpU',
               layout: 'reverse',
               link: '/',
             },
@@ -127,7 +129,8 @@ export default {
               title: 'Test 3',
               paragraph:
                 'Ipsum ut incididunt aliqua officia anim sint magna laborum. Est reprehenderit occaecat aute ad voluptate id do aliqua sit commodo labore cillum aliquip ullamco.',
-              image: 'https://via.placeholder.com/600x400',
+              image:
+                'https://i.picsum.photos/id/481/600/400.jpg?hmac=3MJ3H66ToPLHBHNL9kOPE6aW5LMOjKFRyfcQNC19QGM',
               layout: 'default',
               link: '/',
             },
@@ -210,6 +213,12 @@ export default {
         },
       },
     }
+  },
+
+  mounted() {
+    setTimeout(() => {
+      this.$store.commit('setLoading', false)
+    }, 200)
   },
 }
 </script>
