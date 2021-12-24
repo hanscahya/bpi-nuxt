@@ -1,6 +1,6 @@
 <template lang="pug">
-  div.px-3
-    div.container.mx-auto.flex.justify-between.items-center
+  div.bg-white
+    div.container.mx-auto.px-3.flex.justify-between.items-center
       div.py-3
         img.w-60.cursor-pointer(src="/images/logo.png" @click="$router.push('/')")
 

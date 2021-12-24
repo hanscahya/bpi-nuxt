@@ -23,6 +23,7 @@
     "swiper": "^7.3.1",
     "tailwindcss": "^2.2.19",
     "vue-awesome-swiper": "^4.1.1",
+    "vue-debounce": "^3.0.1",
     "vue-lodash": "^2.1.2"
   },
   "devDependencies": {

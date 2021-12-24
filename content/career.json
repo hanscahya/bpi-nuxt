@@ -1,0 +1,139 @@
+{
+  "page_title": "Career",
+
+  "body": {
+    "title": "Our opening job vacancies",
+    "jobs": [
+      {
+        "title": "Backend Engineer",
+        "department": "Technology",
+        "location": "Jakarta, Indonesia",
+        "link": "/",
+        "level": "Senior - Lead",
+        "years_of_experience": "4 years",
+        "job_type": "Full Time Employment",
+        "qualification": "Financial Industry or Related",
+        "description": "We are looking for great Go developers with a strong understanding of how best to leverage and exploit the language’s unique paradigms, idioms, and syntax. Your primary focus will be on developing Go packages and programs that are efficient, scalable and maintainable. A commitment to collaborative problem solving, sophisticated design, and quality product is essential.",
+        "responsibilities": "<ul><li>Writing scalable, robust, testable, efficient, and easily maintainable code</li><li>Build new product/feature based on product requirement</li><li>Maintain and enhance current product</li><li>Contribution in architectural and design decisions</li><li>Contribution in agile process and DevOps culture improvement</li><li>Contribution in new product initiative</li></ul>",
+        "requirement": "<ul><li>Minimum 2 years of experience</li><li>Strong knowledge of Go programming language, paradigms, constructs and idioms</li><li>Knowledge of goroutine and channel patterns</li><li>Experienced of building API with HTTP REST and or gRPC</li><li>Strong knowledge of SQL and relational database: mysql/mariadb, postgresql</li><li>Experienced with NoSQL database (Redis, MongoDB) is preferred</li><li>Experienced with Containerization (Docker, Kubernetes) is preferred</li><li>Experienced with microservices/distributed architecture is preferred</li></ul>"
+      },
+      {
+        "title": "iOS Engineer",
+        "department": "Technology",
+        "location": "Jakarta, Indonesia",
+        "link": "/",
+        "level": "Senior - Lead",
+        "years_of_experience": "4 years",
+        "job_type": "Full Time Employment",
+        "qualification": "Financial Industry or Related",
+        "description": "We seek an aspiring iOS engineer to develop our brand new iOS application using up-to-date technologies and architectures. Work closely with the product team to define the winning product and develop the application based on UI/UX design and specification. Learn and grow with our experienced iOS team",
+        "responsibilities": "<ul><li>Brainstorm: Discuss and design excellent iOS apps with product and UI/UX team to make a winning product</li><li>Develop: Develop scalable, robust, testable, efficient, and easily maintainable iOS apps using cutting edge technologies such as Swift</li><li>Quality Control: Doing unit testing to maintain app stability and work closely with QA to fix reported bugs found</li></ul>",
+        "requirement": "<ul><li>Have experience on developing minimum 2 iOS Applications lifecycle from inception to release</li><li>Have a good knowledge about Object Oriented Programming (OOP) Principle</li><li>Good knowledge about Swift or Objective-C Programming Language</li><li>Good knowledge about iOS App Lifecycle</li><li>Good knowledge about Git (GitHub/GitLab/Bitbucket) is mandatory</li><li>Good knowledge about database is a plus</li><li>Knowledge on communication protocol with backend such as REST and gRPC is a strong value</li><li>A good team player</li><li>Good communication skills</li><li>Scrum or Agile methodology familiarity is a plus</li><li>Fintech experience is a plus</li></ul>"
+      },
+      {
+        "title": "Android Engineer",
+        "department": "Technology",
+        "location": "Jakarta, Indonesia",
+        "link": "/",
+        "level": "Senior - Lead",
+        "years_of_experience": "4 years",
+        "job_type": "Full Time Employment",
+        "qualification": "Financial Industry or Related",
+        "description": "We seek an aspiring Android engineer to develop our brand new Android application using up-to-date technologies and architectures. Work closely with the product team to define the winning product and develop the application based on UI/UX design and specification. Learn and grow with our experienced Android team",
+        "responsibilities": "<ul><li>Brainstorm: Discuss and design excellent android apps with product and UI/UX team to make a winning product</li><li>Develop: Develop scalable, robust, testable, efficient, and easily maintainable android apps using cutting edge technologies such as Kotlin, AndroidX and Firebase.</li><li>Quality Control: Doing unit testing to maintain app stability and work closely with QA to fix reported bugs found</li></ul>",
+        "requirement": "<ul><li>Have experience on developing minimum 2 Android Applications lifecycle from inception to release</li><li>Have a good knowledge about Object Oriented Programming (OOP) Principle</li><li>Good knowledge about Kotlin (preferred) or Java Programming Language</li><li>Good knowledge about Android App Lifecycle</li><li>Good knowledge about Git (GitHub/GitLab/Bitbucket) is mandatory</li><li>Good knowledge about SQLite database is a plus</li><li>Knowledge on communication protocol with backend such as REST and gRPC is a strong value</li><li>A good team player</li><li>Good communication skills</li><li>Good analytics & problem solving skills</li><li>Good understanding of product ownership</li><li>Scrum or Agile methodology familiarity is a plus</li><li>Fintech experience is a plus</li></ul>"
+      },
+      {
+        "title": "TechOps",
+        "department": "Technology",
+        "location": "Jakarta, Indonesia",
+        "link": "/",
+        "level": "Mid - Senior",
+        "years_of_experience": "4 years",
+        "job_type": "Full Time Employment",
+        "qualification": "Financial Industry or Related",
+        "description": "The TechOps Support Engineer will have an excellent understanding of systems administration, troubleshooting, issue prioritization, root cause analysis in problem-solving, and escalation in a variety of application environments. A successful candidate will demonstrate a technical aptitude, the ability to deal effectively with people in a wide variety of situations. A successful candidate will also be able to prioritize a multitude of concurrent issues and escalate with a customer obsession mindset and demonstrate a proven ability to operate in extremely high-pressure situations. You will provide first and second-tier technical support, contribute to enterprise cross-functional projects and interact with software developers, executives, vendors, and other support teams.",
+        "responsibilities": "<ul><li>Resolve issues impacting client and play a key role in enhancing the client experience.</li><li>Coordinate input from Development, Business Analyst, and Operations teams to deliver a technical solution.</li><li>Partner with business functional team leaders and other key stakeholders to provide analytics and insights to enhance efficiencies, identify challenges, and quantify performance.</li><li>Provide and manage monitoring the system and provide communication to the stakeholder for an issue or outage.</li><li>Manage on-demand (ad hoc) data & report requests to support the evolving needs of the business.</li><li>Project and Program Management: Manage and/or participate in various projects and programs</li></ul>",
+        "requirement": "<ul><li>2+ years of experience providing technical support for software applications</li><li>Demonstrated ability performing a Technical Support role to effectively research and resolve complex technical problems, provide software support and testing, documentation, and technical training</li><li>Proficiency utilizing working with Databases and SQL</li><li>Working knowledge of programming languages (Python, Java, Go) a plus</li><li>Troubleshooting proficiency - ability to duplicate problems and define root causes using designs, code, or specifications</li><li>Familiar with Linux OS</li><li>Demonstrated experience finding an issue based on Logs data.</li><li>Working knowledge  of monitoring platform (datadog,grafana,zabix, cacti) is a plus</li></ul>"
+      },
+      {
+        "title": "Product Manager",
+        "department": "Digital Banking",
+        "location": "Jakarta, Indonesia",
+        "link": "/",
+        "level": "Senior - Lead",
+        "years_of_experience": "4 years",
+        "job_type": "Full Time Employment",
+        "qualification": "Financial Industry or Related",
+        "description": "The Product Manager is responsible for the product planning and execution throughout the Product Life Cycle, including defining the product vision, gathering and prioritizing product and customer requirements, writing product requirement document, and working closely with UI/UX designer, researcher, engineering, marketing, operation, and support to ensure revenue and customer satisfaction goals are met.The Product Manager should have a critical thinking mindset in discovering and defining problems; able to plan and provide the optimal solution based on the current situation & available resources.The Product Manager also ensures that the product supports the company’s overall strategy and goals.",
+        "responsibilities": "<ul><li>You will create Product Requirement Documents (PRDs) with clarity on scope, user metrics, UI flow, user stories & acceptance criteria.You will integrate usability studies, research, and market analysis into product requirements.</li><li>You will communicate detailed product requirements and deliverables to your development team and any other stakeholders that are related to the feature.</li><li>You will need to be ready to get your hands dirty to unblock obstacles hindering the project delivery.</li><li>You will monitor the product implementation and ensure timely progress.</li><li>You will analyze the user metrics performance and do experiments and enhancement needed to improve the metrics.</li><li>You will establish a shared vision with all stakeholders to align the overall roadmap based on priority and effort needed.</li></ul>",
+        "requirement": "<ul><li>Bachelor's degree with a minimum of 3+ years of experience as a product manager/product owner, preferably in tech startups environment.</li><li>Strong knowledge of the payment system and transaction flow in modern financial service companies.</li><li>A self-starter, having strong initiative and the ability to adapt to new challenges and ideas.</li><li>Strong presentation skills and ability to influence stakeholders into the idea.</li><li>Strong drive and project management skills.</li><li>Excellent time management skills and abilities to multitask and prioritize work.</li><li>Able to monitor internal and external data points that may affect the risk level of a decision.</li><li>Experience working in a fast-paced, collaborative, agile environment.</li><li>Fluent in English & a good communicator with great listening skills.</li></ul>"
+      },
+      {
+        "title": "Aladin Internship Programme",
+        "department": "Open All Department",
+        "location": "Jakarta, Indonesia",
+        "link": "/",
+        "level": "Entry Level",
+        "years_of_experience": "0 years",
+        "job_type": "Paid Internship",
+        "qualification": "S1 from reputable university",
+        "description": "Get your best shot to get an opportunity to kick start your career through an internship at Aladin! You will learn first hand how to support the business to achieve their goals while gaining your experiences working with diverse team. We provide an internship and mentoring in Human Capital, Operations, Technology, Product and Marketing departments. Its a hands on learning about commitment and collaboration while sharpening your problem solving skills.",
+        "responsibilities": "<ul><li>Brainstorm: Discuss and collaborate with stakeholders. Take lead of your own project.</li><li>Quality Control: Doing reporting and monitoring to maintain the quality of documentation to every projects.</li></ul>",
+        "requirement": "<ul><li>An active students in the university or a fresh graduate who is ready to kick off his/her career in Digital Banking </li><li>Good communication skills, you will need to sell some ideas/solutions </li><li>Self motivated and fast learner </li><li>Technology and internet savvy </li></ul><h6><b>How does it work for me? </b></h6><ul><li>It’s a paid full time internship with duration of 2-6 months </li><li>You will be required to work 5 days a week either from home or office during those period of times </li><li>You will be expected to present your project/assignment by the end of internship</li></ul>"
+      },
+      {
+        "title": "Application Analyst",
+        "department": "Technology",
+        "location": "Jakarta, Indonesia",
+        "link": "/",
+        "level": "Senior - Lead",
+        "years_of_experience": "5 years",
+        "job_type": "Full Time Employment",
+        "qualification": "Financial Industry or Related",
+        "description": "Leading the management of application systems starting from the initiation, development and maintenance stages with all aspects such as providing resources, costs, and solutions so that they can be implemented in accordance with process standards, quality, and expected time in accordance with business strategy.",
+        "responsibilities": "<ul><li>Leading, managing and supervising team performance,</li><li>Monitoring the process of collecting bank requirements and analyzing their fulfillment,</li><li>Monitor the process of finding solutions and budgeting to answer bank needs,</li><li>Monitor the selection process and recommendation of solutions and providers,</li><li>Designing standard procedures for working on information technology projects,</li><li>Monitor and maintain the quality standards that have been determined,</li><li>Monitor project progress, provide timely feedback, and encourage a culture of agility and learning,</li><li>Monitor system maintenance according to agreed standard procedures and service levels</li><li>Ensuring the development team adheres to defined principles, work guidelines and best practices,</li><li>Planning capacity to support technology plans according to projected growth,</li><li>Work with related technology and business teams to build a plan that aligns with the business plan and long-term corporate strategy,</li><li>Continuously develop team skills and apply technology that can support effective and efficient performance.</li></ul>",
+        "requirement": "<ul><li>Minimum bachelor's degree in Information Technology</li><li>Minimum 10 years in the field of information technology development,</li><li>Minimum 8 years in team leadership.</li><li>Minimum 5 years in the financial industry.</li></ul>"
+      },
+      {
+        "title": "Product Marketing Manager",
+        "department": "Digital Banking",
+        "location": "Jakarta, Indonesia",
+        "link": "/",
+        "level": "Senior - Lead",
+        "years_of_experience": "4 years",
+        "job_type": "Full Time Employment",
+        "qualification": "Financial Industry or Related",
+        "description": "We are looking for a Product Marketing Manager to highlight the best features of our products and to then build communication & adoption strategies for these. The Product Marketing Manager will be responsible for researching market trends, understanding product development processes and working with various departments to successfully launch new products. As a Product Marketing Manager, you must have excellent time management skills, communication and interpersonal skills",
+        "responsibilities": "<ul><li>Becoming familiar with company products.</li><li>Build on product messaging that sets new products apart from others in the market to give them a unique selling point</li><li>Identifying key features in products that will appeal to customers.</li><li>Comfortable working with different stakeholders / teams from various levels and background to implement strategies</li><li>Planning product launches, go to market, exploration (discovery), through product value proposition (positioning), user engagement (lifecycle).</li><li>Studying analytics relating to product campaigns.</li><li>Translate technical details into benefits for the user</li><li>Follow and analyze market trends to position products</li><li>Craft compelling messages across marketing channels (landing pages, ad campaigns)</li><li>Able to adapt clear communication based on each stakeholder’s background, leading the discussion to reach mutual objectives (consensus), and has creative capacity to provide alternatives to resolve competing priorities</li><li>Test marketing product features, releases and ad copy</li><li>Evaluate projects using relevant KPIs and feedback from existing and prospective customers</li></ul>",
+        "requirement": "<ul><li>Bachelor’s degree in Marketing or Communications or any related field</li><li>5 years experience in Product Marketing / Product Management / Marketing</li><li>Experience in copywriting is a plus</li><li>Experience in market analysis & user research</li><li>Familiar with product marketing tactics (e.g. integrated marketing campaigns)</li><li>Superior verbal and written communication skills (English & Bahasa Indonesia).</li><li>Impeccable attention to detail.</li><li>Exemplary organization skills and time management abilities.</li></ul>"
+      },
+      {
+        "title": "Graphic Design",
+        "department": "Digital Banking",
+        "location": "Jakarta, Indonesia",
+        "link": "/",
+        "level": "Mid",
+        "years_of_experience": "3 years",
+        "job_type": "Full Time Employment",
+        "qualification": "Agency or start up related industries",
+        "description": "",
+        "responsibilities": "<ul><li>Execute all visual needs (promos, educations, awareness, etc.).</li><li>Conceptualize creative ideas for all campaigns.</li><li>Collaborate with all Aladin team from various divisions to understand what they want out of a project, helping them get those ideas out in a workable way, and ensure the work is delivered on time and on brief.</li><li>Clearly and confidently communicate and present design decisions, gather and implement feedback from project owners and other designers, and manage project owner's expectations.</li><li>Ensure that every creative project content is relevant to the brand's needs, including key visual designs, audio visual outputs, social media posts.</li><li>Able to create clear production guidelines, briefs, managing and supervising other resources involved in the development of projects including photographers, production house, creative agency, etc.</li></ul>",
+        "requirement": "<ul><li>At least 4 years of experience in Graphic Design/similar roles.</li><li>Creative professional with technical skills for Adobe Photoshop & Illustrator.</li><li>High attention to details and design aesthetics.</li><li>Able to work with a wide range of medias.</li><li>Able to translate a design brief into a visual outcome.</li><li>Able to keep up with the fast-moving industry.</li><li>Good in teamwork and managing workload.</li></ul>"
+      },
+      {
+        "title": "Tech Recruiter",
+        "department": "President Directorate",
+        "location": "Jakarta, Indonesia",
+        "link": "/",
+        "level": "Mid",
+        "years_of_experience": "3 years",
+        "job_type": "Contract - 6 months",
+        "qualification": "Agency or start up related industries",
+        "description": "We're looking for seasoned Tech Talent Acquisition with experience in implementing the best Recruitment practices in hiring tech talents.",
+        "responsibilities": "<ul><li>Handling end to end recruitment, from sourcing & screening talents, interview assessment, recommending talent to users, offering proposal negotiation, until onboarding.</li><li>Networking within tech communities to expand talent pool</li><li>Act as recruitment advisor to hiring managers, proposing strategy to get the best talents in the market, and solving day to day recruitment problems</li><li>Stakeholders management to collaborate together for recruitment target fulfillment</li><li>Helps executing HR initiatives to improves employee retention, happiness, communications, and collaboration as part of People & Culture team</li></ul>",
+        "requirement": "<ul><li>A bachelor's of science, human resources degree, or any relevant degree</li><li>3 years of relevant work experience in a tech recruiter capacity</li><li>A good understanding of technology stack and sourcing talent strategy through social media and other channels.</li><li>Experience in recruitment processes and platforms</li><li>Good communication, interpersonal, decision-making skills, and stakeholders management</li></ul>"
+      }
+    ]
+  }
+}
