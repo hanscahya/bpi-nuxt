@@ -1,11 +1,14 @@
 <template lang="pug">
   div(v-if="content")
-    div.container.mx-auto.grid.grid-cols-4.gap-8
-      div
-        img(:src="content.image")
-      div.col-span-3 {{ content.html1 }}
-    
-    div.container.mx-auto.text-center {{ content.html2 }}
+    div.container.mt-20.mx-auto.grid.grid-cols-8.gap-8
+      img.col-span-2.col-start-2(:src="content.image")
+      div.col-span-4
+        div.text-xl.font-extrabold {{ content.name }}
+        div.text-md.font-semibold.text-gray-800 {{ content.label }}
+        div.mt-4 {{ content.html1 }}
+
+      div.col-span-6.col-start-2 {{ content.html2 }}
+
 
 </template>
 
@@ -22,8 +25,6 @@ export default {
   },
 
   async mounted() {
-    console.log(this.$route.params)
-
     if (!this.$route.params.id)
       return this.$nuxt.error({ statusCode: 404, message: 'Page not Found' })
     else {

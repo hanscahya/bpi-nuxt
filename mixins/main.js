@@ -74,6 +74,20 @@ export default {
       return a
     },
 
+    setGlobalAlert(message, theme, duration) {
+      if (typeof message === 'string')
+        message = this.capitalizeFirstLetter(message)
+
+      this.$bvToast.toast(message || 'Sorry, we have a problem', {
+        // title: `Toaster ${toaster}`,
+        toaster: 'b-toaster-top-center',
+        bodyClass: ['tr--toast', theme || 'warning'],
+        autoHideDelay: duration || 4000,
+        noCloseButton: true,
+        solid: true,
+      })
+    },
+
     windowOpen(url, opt) {
       /*
         for nuxt change windows location

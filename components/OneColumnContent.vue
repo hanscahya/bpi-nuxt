@@ -7,7 +7,7 @@
 
     div.container.relative.flex.flex-col.justify-center.items-center.text-center.z-20.font-bold
       img.w-52.mb-5(:src="image")
-      h1.mt-10 {{ title }}
+      h1 {{ title }}
       p(class="w-8/12") {{ paragraph }}
 
       div.button-container
@@ -68,6 +68,10 @@ button {
 .one-column-container {
   @apply relative;
   @apply py-40;
+
+  @apply bg-cover;
+  @apply bg-center;
+  @apply bg-no-repeat;
 
   .button-container {
     @apply overflow-hidden;

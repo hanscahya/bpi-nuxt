@@ -1,12 +1,13 @@
 <template lang="pug">
   div.flex.flex-col
     OneColumnContent(
+      v-if="content"
       :title="content.section1.title"
       :paragraph="content.section1.paragraph"
       :image="content.section1.image"
-      :bg-image="content.section2.bgImage"
-      :button-link="content.section2.buttonLink"
-      :button-text="content.section2.buttonText"
+      :bg-image="content.section1.bgImage"
+      :button-link="content.section1.buttonLink"
+      :button-text="content.section1.buttonText"
     )
 
     div.py-10.container.self-center(class="sm:px-10 md:px-20 lg:px-40")
@@ -57,11 +58,11 @@ export default {
     return {
       content: {
         section1: {
-          title: 'Test',
+          title: 'Tentang Kami',
           paragraph:
             'Ipsum ut incididunt aliqua officia anim sint magna laborum. Est reprehenderit occaecat aute ad voluptate id do aliqua sit commodo labore cillum aliquip ullamco.',
-          image: '/images/blank-img.png',
-          bgImage: '/images/slider/cs.jpg',
+          image: '/icons/group.png',
+          bgImage: '/images/about-us.jpg',
           buttonLink: '/',
           buttonText: 'Read More',
         },
@@ -71,8 +72,7 @@ export default {
               title: 'Visi',
               paragraph:
                 'Ipsum ut incididunt aliqua officia anim sint magna laborum. Est reprehenderit occaecat aute ad voluptate id do aliqua sit commodo labore cillum aliquip ullamco.',
-              image:
-                'https://i.picsum.photos/id/506/600/400.jpg?hmac=MC98idG_CqLYLFS3hI8kZamVJi7EZAXksZOuOQeAjTk',
+              image: '/images/about-us-a.jpg',
               layout: 'default',
               link: '/',
             },
@@ -80,8 +80,7 @@ export default {
               title: 'Misi',
               paragraph:
                 'Ipsum ut incididunt aliqua officia anim sint magna laborum. Est reprehenderit occaecat aute ad voluptate id do aliqua sit commodo labore cillum aliquip ullamco.',
-              image:
-                'https://i.picsum.photos/id/440/600/400.jpg?hmac=Kb3rP_-EUk-uAjI0x9dg5-hPWIQBoW1XEwhQF9bXsFs',
+              image: '/images/about-us-b.jpg',
               layout: 'reverse',
               link: '/',
             },
