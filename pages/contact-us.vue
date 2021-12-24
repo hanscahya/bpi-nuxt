@@ -1,7 +1,7 @@
 <template lang="pug">
   div.container.mx-auto
     div.mt-20.grid.gap-4.grid-cols-2
-      img.h-full.object-cover(src="https://media.istockphoto.com/photos/-picture-id1311934969?b=1&k=20&m=1311934969&s=170667a&w=0&h=UQ3F8CE5zam5mT5swIliZ9nO7dhX4ZzsALMufFdv6Ys=")
+      img.h-full.object-cover(src="/images/contact.jpg")
 
       form.bg-white.border.rounded-lg.px-8.pt-6.pb-8
         div.mb-4

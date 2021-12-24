@@ -2,13 +2,16 @@
   div
     div
       //- hero
-      img.mb-4.w-full.h-96.object-cover.object-top(src="/images/career.jpg")
+      img.mb-4.w-full.object-cover.object-top(src="/images/career.jpg" style="height: 600px")
 
     div.container.mt-10.mx-auto
       //- filter
       div(v-if="!_.isEmpty(content.body)")
         div.my-3.text-center.text-2xl.font-bold {{ content.body.title }}
-        div.mt-8.grid.grid-cols-4
+        div.mt-8.grid.grid-cols-4(
+          md:grid-cols-6
+          xl:grid-cols-8
+        )
           div.px-3.col-start-2(cols="12" md="6" lg="4")
             label.block.text-gray-700.text-sm.font-bold.mb-2 Position
             b-form-input.shadow.appearance-none.border.rounded.w-full.py-2.px-3.text-gray-700.leading-tight(
