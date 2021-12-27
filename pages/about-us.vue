@@ -40,6 +40,8 @@
 <script>
 import main from '@/mixins/main.js'
 
+import profile from '@/content/profile.json'
+
 import OneColumnContent from '@/components/OneColumnContent.vue'
 import TwoColumnsContent from '@/components/TwoColumnsContent.vue'
 import LargeProfile from '@/components/LargeProfile.vue'
@@ -104,8 +106,9 @@ export default {
     }
   },
 
-  async mounted() {
-    const response = await this.fetchJSON('/json/profile/index.json')
+  mounted() {
+    const response = profile
+    console.log(response)
     this.content.section3.items = response
 
     setTimeout(() => {

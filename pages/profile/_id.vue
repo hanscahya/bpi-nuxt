@@ -14,6 +14,8 @@
 <script>
 import main from '@/mixins/main.js'
 
+import profile from '@/content/profile.json'
+
 export default {
   mixins: [main],
 
@@ -39,9 +41,9 @@ export default {
   },
 
   methods: {
-    async getContent() {
+    getContent() {
       const index = parseInt(this.$route.params.id)
-      const response = await this.fetchJSON(`/json/profile/index.json`)
+      const response = profile
 
       return response.filter((c) => c.id === index)
     },
