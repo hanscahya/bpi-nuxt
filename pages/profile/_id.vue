@@ -9,7 +9,6 @@
 
       div.col-span-6.col-start-2 {{ content.html2 }}
 
-
 </template>
 
 <script>
@@ -28,15 +27,24 @@ export default {
     if (!this.$route.params.id)
       return this.$nuxt.error({ statusCode: 404, message: 'Page not Found' })
     else {
-      const response = await this.fetchJSON(
-        `/json/profile/${this.$route.params.id}.json`
-      )
-      this.content = response
+      const responseContent = await this.getContent()
+      if (responseContent.length > 0) this.content = responseContent[0]
+      else
+        return this.$nuxt.error({ statusCode: 404, message: 'Page not Found' })
 
       setTimeout(() => {
         this.$store.commit('setLoading', false)
       }, 200)
     }
+  },
+
+  methods: {
+    async getContent() {
+      const index = parseInt(this.$route.params.id)
+      const response = await this.fetchJSON(`/json/profile/index.json`)
+
+      return response.filter((c) => c.id === index)
+    },
   },
 }
 </script>
