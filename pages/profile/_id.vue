@@ -5,9 +5,9 @@
       div.col-span-4
         div.text-xl.font-extrabold {{ content.name }}
         div.text-md.font-semibold.text-gray-800 {{ content.label }}
-        div.mt-4 {{ content.html1 }}
+        div.mt-4(v-html="content.html1")
 
-      div.col-span-6.col-start-2 {{ content.html2 }}
+      div.col-span-6.col-start-2(v-html="content.html2")
 
 </template>
 
