@@ -148,22 +148,61 @@ export default {
         section3: {
           items1: [
             {
-              image: 'https://via.placeholder.com/150',
+              image: '/images/clients/adf.png',
             },
             {
-              image: 'https://via.placeholder.com/150',
+              image: '/images/clients/bandara-city-mall.png',
             },
             {
-              image: 'https://via.placeholder.com/150',
+              image: '/images/clients/bt-cocoa.png',
             },
             {
-              image: 'https://via.placeholder.com/150',
+              image: '/images/clients/buwanatala-indah-permah.png',
             },
             {
-              image: 'https://via.placeholder.com/150',
+              image: '/images/clients/green-bay-pluit.png',
             },
             {
-              image: 'https://via.placeholder.com/150',
+              image: '/images/clients/green-lake-sunter.png',
+            },
+            {
+              image: '/images/clients/its.png',
+            },
+            {
+              image: '/images/clients/lippo-office-tower.png',
+            },
+            {
+              image: '/images/clients/madison-park.png',
+            },
+            {
+              image: '/images/clients/metro-park-residence.png',
+            },
+            {
+              image: '/images/clients/pemkot-tangerang-selatan.png',
+            },
+            {
+              image: '/images/clients/rs-pelni.png',
+            },
+            {
+              image: '/images/clients/sdh.png',
+            },
+            {
+              image: '/images/clients/smailing-tour.png',
+            },
+            {
+              image: '/images/clients/tomang-tol-pasar-swalayan.png',
+            },
+            {
+              image: '/images/clients/universitas-trisakti.png',
+            },
+            {
+              image: '/images/clients/uph-1.png',
+            },
+            {
+              image: '/images/clients/uph-2.png',
+            },
+            {
+              image: '/images/clients/vimala-hills.png',
             },
           ],
 

@@ -1,7 +1,8 @@
 <template lang="pug">
   swiper.relative.z-10(ref="infiniteSwiper" :options="swiperOptions")
     swiper-slide(v-for="(item, contentIndex) in items" :key="contentIndex")
-      img.mx-auto.animate(:src="item.image")
+      div.mx-3.bg-white.flex.items-center.rounded-xl
+        img.p-2.w-40.h-40.mx-auto.animate.object-contain(:src="item.image")
 
 </template>
 
@@ -22,8 +23,9 @@ export default {
         initialSlide: 0,
         effect: 'slide',
         speed: 2000,
+        slideClass: 'swiper-slide',
         autoplay: {
-          delay: 2000,
+          delay: 0,
           pauseOnMouseEnter: true,
           disableOnInteraction: false,
         },
@@ -47,5 +49,9 @@ img.animate {
   &:hover {
     @apply shadow-xl;
   }
+}
+
+.swiper-slide {
+  @apply self-center;
 }
 </style>
