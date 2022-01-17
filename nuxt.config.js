@@ -1,4 +1,8 @@
 export default {
+  server: {
+    port: 3010,
+  },
+
   // Convert to Static Site Generation
   target: 'static',
   generate: {
