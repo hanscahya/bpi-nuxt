@@ -1,8 +1,8 @@
 <template lang="pug">
   swiper.relative.z-10(ref="infiniteSwiper" :options="swiperOptions")
     swiper-slide(v-for="(item, contentIndex) in items" :key="contentIndex")
-      div.mx-3.bg-white.flex.items-center.rounded-xl
-        img.p-2.w-40.h-40.mx-auto.animate.object-contain(:src="item.image")
+      div.mx-3.bg-white.flex.items-center.rounded-xl.animate
+        img.p-2.w-40.h-40.mx-auto.object-contain(:src="item.image")
 
 </template>
 
@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img.animate {
+.animate {
   @apply shadow-sm;
   transition: all 0.5s ease;
 

@@ -1,7 +1,7 @@
 <template lang="pug">
-  div.p-3.rounded-xl.flex.justify-center.items-center.animate
+  div.p-4.rounded-xl.flex.justify-between.items-center.animate
     img.w-14(:src="icon")
-    div.ml-20.mr-3.text-right
+    div.text-right
       div.font-bold {{ label}}
       h2 {{ value }}
 
@@ -35,7 +35,7 @@ export default {
 
   &:hover {
     @apply shadow-2xl;
-    @apply bg-gray-200;
+    // @apply bg-gray-200;
 
     // transform: scale(102%);
   }

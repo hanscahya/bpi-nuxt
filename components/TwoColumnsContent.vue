@@ -11,12 +11,12 @@
         : 'items-start text-left'"
     )
       h1.animate {{ title }}
-      p {{ paragraph }}
+      p.mt-3 {{ paragraph }}
 
-    div.flex-1.flex.flex-col.justify-center(
+    div.flex-1.flex.flex-col(
       :class="layout === 'default'\
-        ? 'items-end text-right'\
-        : 'items-start text-left'"
+        ? 'items-start text-right'\
+        : 'items-end text-left'"
     )
       img.animate.rounded-xl(class="w-10/12" :src="image")
 

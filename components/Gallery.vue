@@ -12,7 +12,7 @@
       @keyup.esc=";(popup = false); fullscreenImage = null"
     )
       div.bg-black.opacity-50.h-full.w-full(@click=";(popup = false); fullscreenImage = null")
-      img.fixed.inset-2.m-auto(:src="fullscreenImage" style="z-index: 110")
+      img.fixed.inset-2.m-auto.max-w-6xl(:src="fullscreenImage" style="z-index: 110")
 
 </template>
 

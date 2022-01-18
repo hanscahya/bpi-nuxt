@@ -7,12 +7,13 @@
 
     div.container.relative.flex.flex-col.justify-center.items-center.text-center.z-20.font-bold
       img.w-52.mb-5(:src="image")
-      h1 {{ title }}
-      p(class="w-8/12") {{ paragraph }}
+      div.font-black.text-3xl {{ title }}
+      p.mt-5(class="w-5/6") {{ paragraph }}
 
       div.button-container
         button.mt-5.bg-blue-500.text-white.font-bold.py-2.px-4.rounded-3xl(
           v-if="buttonLink"
+          :class="isButtonAnimate ? 'scale-0' : 'scale-1'"
           @click="$router.push(buttonLink)"
         ) {{ buttonText }}
 
@@ -44,6 +45,10 @@ export default {
     buttonText: {
       type: String,
       default: '',
+    },
+    isButtonAnimate: {
+      type: Boolean,
+      default: false,
     },
   },
 }
@@ -78,15 +83,14 @@ button {
 
     button {
       transition: all 0.15s ease;
-      transform: scale(0);
     }
   }
 
   &:hover {
-    .bg-overlay {
-      @apply bg-gray-500;
-      @apply bg-opacity-50;
-    }
+    // .bg-overlay {
+    //   @apply bg-gray-500;
+    //   @apply bg-opacity-50;
+    // }
 
     .button-container > button {
       transform: scale(1);

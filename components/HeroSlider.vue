@@ -2,17 +2,18 @@
   div.relative
     swiper.relative.z-10(ref="heroSwiper" :options="swiperOptions")
       swiper-slide(v-for="(item, contentIndex) in items" :key="contentIndex")
-        div.animate-img
+        div
           img(:src="item.image")
-        div.absolute.inset-0.flex.flex-col.justify-center.items-center
-          div.animate-title
-            div.text-6xl.font-bold {{ item.title.toUpperCase() }}
-          div.animate-subtitle
-            div.text-3xl {{ item.subtitle }}
+        div.absolute.inset-0.flex.flex-col.justify-center.items-center.text-white
+          div.animate-title.text-center.mx-auto(class="w-4/6")
+            div.text-5xl.font-black {{ item.title.toUpperCase() }}
+          div.mt-5.mx-auto.text-center.animate-subtitle(class="w-4/6")
+            div.text-xl.font-bold {{ item.subtitle }}
+            div.text-md.font-bold {{ item.paragraph }}
 
       div.swiper-pagination.pb-3(slot="pagination")
     
-    div.navigation-wrapper
+    div.navigation-wrapper.text-white
       div.animate-arrow.text-4xl.px-3(@click="swiper.slidePrev()")
         b-icon(icon="chevron-left")
       div.animate-arrow.text-4xl.px-3(@click="swiper.slideNext()")
