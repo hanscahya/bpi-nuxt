@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  div.bg-blue-200
     Header.header
     Nuxt.nuxt-container
     Footer
@@ -46,5 +46,14 @@ export default {
   @apply overflow-hidden;
 
   min-height: calc(100vh - theme('spacing.20'));
+}
+
+.header,
+.nuxt-container,
+.footer {
+  @apply mx-auto;
+  @apply bg-white;
+
+  max-width: 1440px;
 }
 </style>
