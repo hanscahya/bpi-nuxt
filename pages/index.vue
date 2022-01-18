@@ -181,6 +181,36 @@ export default {
             {
               image: '/images/clients/vimala-hills.png',
             },
+            {
+              image: '/images/clients/inner-city.png',
+            },
+            {
+              image: '/images/clients/nifarro.png',
+            },
+            {
+              image: '/images/clients/rs-bhaktiasih.png',
+            },
+            {
+              image: '/images/clients/siloam-hospitals.png',
+            },
+            {
+              image: '/images/clients/rs-mulya.png',
+            },
+            {
+              image: '/images/clients/bay-walk.png',
+            },
+            {
+              image: '/images/clients/gading-mediterania.png',
+            },
+            {
+              image: '/images/clients/athalia.png',
+            },
+            {
+              image: '/images/clients/bandara-city.png',
+            },
+            {
+              image: '/images/clients/atlanta.png',
+            },
           ],
 
           bgImage: '/images/slider/pool_cleaning.jpg',
