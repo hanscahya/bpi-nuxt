@@ -11,7 +11,7 @@
         : 'items-start text-left'"
     )
       h1.animate {{ title }}
-      p.mt-3 {{ paragraph }}
+      p.mt-3(v-html="paragraph")
 
     div.flex-1.flex.flex-col(
       :class="layout === 'default'\
@@ -50,6 +50,9 @@ export default {
 <style lang="scss" scoped>
 img.animate {
   @apply shadow-sm;
+  @apply border;
+  @apply border-0;
+
   transition: all 0.5s ease;
 
   &:hover {

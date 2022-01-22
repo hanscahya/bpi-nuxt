@@ -1,14 +1,14 @@
 <template lang="pug">
   div.flex.flex-col
-    OneColumnContent(
-      v-if="content"
-      :title="content.section1.title"
-      :paragraph="content.section1.paragraph"
-      :image="content.section1.image"
-      :bg-image="content.section1.bgImage"
-      :button-link="content.section1.buttonLink"
-      :button-text="content.section1.buttonText"
-    )
+    div.mt-10.grid.grid-cols-2
+      img.object-cover(src="/images/about-us.jpg")
+      div.p-5.flex.flex-col.justify-center.items-start
+        div.text-3xl.font-black Tentang BPI
+        div.mt-3.text-lg(class="w-10/12") Pengalaman dalam bidang standar kebersihan hotel membuat BPU menjadi perusahaan terbaik
+
+    div.mx-auto.my-10.p-5.text-center(class="w-10/12")
+      div.text-sm.font-black.text-blue-400 PT. Bangunpapan Idaman (BPI)
+      div.mt-5.leading-loose Perusahaan yg bergerak dalam bidang spesialist penyedia jasa kebersihan (cleaning service) di indonesia. Yg mana saat ini memiliki jumlah pekerja lebih dari 3000 pekerja. Berdasarkan dengan akta pendirian perusahaan, PT. Bangunpapan Idaman (BPI) resmi didirikan pada tanggal 04 Agustus 2006. BPI sudah memiliki pengalaman lebih dari satu dekade menjadi partner setia klien-klien kami baik dari Apartemen, Perkantoran, RS, Pabrik, universitas, sekolah, pusat perbelanjaan dll, sejak pertama kali didirikan Di tahun 2006, selama 14 tahun beroperasi, BPI telah menjadi salah satu perusahaan penyedia layanan fasilitas yg profesional & mengutamakan kepuasan klien klien kami serta didukung dengan Sumber daya manusia yg dapat diandalkan & berlandaskan kejujuran & profesionalitas.
 
     div.py-10.container.self-center(class="sm:px-10 md:px-20 lg:px-40")
       TwoColumnsContent(
@@ -22,6 +22,7 @@
       )
 
     LargeProfile.px-20.py-10(
+      :label="content.section3.highlight.label"
       :title="content.section3.highlight.title"
       :paragraph="content.section3.highlight.paragraph"
       :button-1-text="content.section3.highlight.button1Link"
@@ -31,8 +32,22 @@
       :image="content.section3.highlight.image"
     )
 
+    div.mx-auto.my-10.p-5.text-center
+      div.text-sm.font-black.text-blue-400 Jajaran Pimpinan
     ThumbnailProfile.mb-10(
-      :items="content.section3.items.slice(1, 5)"
+      :items="content.section3.items.slice(0, 5)"
+    )
+
+    div.mx-auto.my-10.p-5.text-center
+      div.text-sm.font-black.text-blue-400 Manager
+    ThumbnailProfile.mb-10(
+      :items="content.section3.items.slice(5, 8)"
+    )
+
+    div.mx-auto.my-10.p-5.text-center
+      div.text-sm.font-black.text-blue-400 Dokter Perusahaan
+    ThumbnailProfile.mb-10(
+      :items="content.section3.items.slice(8, 9)"
     )
 
 </template>
@@ -62,9 +77,9 @@ export default {
         section1: {
           title: 'Tentang Kami',
           paragraph:
-            'Ipsum ut incididunt aliqua officia anim sint magna laborum. Est reprehenderit occaecat aute ad voluptate id do aliqua sit commodo labore cillum aliquip ullamco.',
-          image: '/icons/group.png',
-          bgImage: '/images/about-us.jpg',
+            'PT. Bangunpapan Idaman (BPI) adalah perusahaan yg bergerak dalam bidang spesialist penyedia jasa kebersihan (cleaning service) di indonesia. Yg mana saat ini memiliki jumlah pekerja lebih dari 3000 pekerja. Berdasarkan dengan akta pendirian perusahaan, PT. Bangunpapan Idaman (BPI) resmi didirikan pada tanggal 04 Agustus 2006. BPI sudah memiliki pengalaman lebih dari satu dekade menjadi partner setia klien-klien kami baik dari Apartemen, Perkantoran, RS, Pabrik, universitas, sekolah, pusat perbelanjaan dll, sejak pertama kali didirikan Di tahun 2006, selama 14 tahun beroperasi, BPI telah menjadi salah satu perusahaan penyedia layanan fasilitas yg profesional & mengutamakan kepuasan klien klien kami serta didukung dengan Sumber daya manusia yg dapat diandalkan & berlandaskan kejujuran & profesionalitas.',
+          image: '/images/logo.png',
+          bgImage: '/images/slider/cs.jpg',
           buttonLink: '/',
           buttonText: 'Read More',
         },
@@ -73,7 +88,7 @@ export default {
             {
               title: 'Visi',
               paragraph:
-                'Ipsum ut incididunt aliqua officia anim sint magna laborum. Est reprehenderit occaecat aute ad voluptate id do aliqua sit commodo labore cillum aliquip ullamco.',
+                'MENJADI PERUSAHAAN PELAYANAN TERBAIK YANG MENJUNJUNG TINGGI PROFESIONALISME',
               image: '/images/about-us-a.jpg',
               layout: 'default',
               link: '/',
@@ -81,7 +96,7 @@ export default {
             {
               title: 'Misi',
               paragraph:
-                'Ipsum ut incididunt aliqua officia anim sint magna laborum. Est reprehenderit occaecat aute ad voluptate id do aliqua sit commodo labore cillum aliquip ullamco.',
+                '<ul class="list-decimal pl-5"><li>Menyediakan Pelayanan Kebersihan dan Keamanan yang Dapat Diandalkan</li><li>Melaksanakan Budaya Kerja yang Berlandaskan Kejujuran dan Profesionalisme</li><li>Meningkatkan dan Mengembangkan Kompetensi Sumber Daya Manusia</li></ul>',
               image: '/images/about-us-b.jpg',
               layout: 'reverse',
               link: '/',
@@ -90,9 +105,10 @@ export default {
         },
         section3: {
           highlight: {
+            label: 'Presdir & CEO',
             title: 'Sambutan Direktur Utama',
             paragraph:
-              'Excepteur ea nostrud occaecat in do quis consequat aliquip sit tempor esse. Duis nisi elit id consectetur ullamco quis voluptate incididunt dolor reprehenderit sunt ad. Sint deserunt nulla et exercitation ipsum consequat non reprehenderit adipisicing non.',
+              '<b class="text-lg">H.Purnomo Hadisaputro</b><br /> Excepteur ea nostrud occaecat in do quis consequat aliquip sit tempor esse. Duis nisi elit id consectetur ullamco quis voluptate incididunt dolor reprehenderit sunt ad. Sint deserunt nulla et exercitation ipsum consequat non reprehenderit adipisicing non.',
             button1Link: '/',
             button1Text: 'Baca Selengkapnya',
             button2Link: '/',

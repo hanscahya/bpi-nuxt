@@ -1,12 +1,14 @@
 <template lang="pug">
-  div.container.mx-auto.px-10.grid.grid-cols-4.gap-8
-    div.card(
+  div.container.mx-auto.px-10.flex.flex-wrap.justify-center
+    div.m-5.flex.flex-col.justify-between.card(
       v-for="(item, itemIndex) in items"
       :key="itemIndex"
+      class="w-3/12"
       @click="$router.push(`/profile/${item.id}`)"
     )
-      h1 {{ item.name }}
-      p {{ item.label }}
+      div
+        div.text-xl.font-black {{ item.name }}
+        div.mt-3.text-sm {{ item.label }}
       img.mt-5(:src="item.image")
 
 </template>
