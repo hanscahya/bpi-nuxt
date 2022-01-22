@@ -1,18 +1,33 @@
 <template lang="pug">
-  div.container.mx-auto
-    div.grid.gap-1.grid-cols-5
-      div.p-5
-        div.mb-3(v-for="(item, itemIndex) in content.items" :keys="itemIndex")
-          span.cursor-pointer(
-            :class="{ 'font-bold': item.title === currentContent.title }"
-            @click="currentContent = item"
-          ) {{ item.title }}
+  div.container.mx-auto.py-20.flex.items-center.relative.overflow-hidden
+    div.grid.grid-cols-2
+      div.px-10.flex.flex-col.justify-center
+        div.text-sm.font-black.text-blue-400 Our Services
+        div.mt-3.text-3xl.font-black Making your world work better
+        div.mt-5.leading-loose Smart, integrated facility services can help your organisation grow profitability, boost efficiency and gain a competitive edge - all while freeing you to focus on your core business. We adapt to your needs and ongoing transformation. Whichever industry, whichever place, we're there to enhance your success.
+      div.px-10.flex.flex-wrap.justify-center.items-center
+        div(v-for="(item, itemIndex) in content.items" :key="itemIndex" class="w-4/12")
+          div.m-1.h-40.flex.flex-col.justify-center.items-center.text-white.transition-all.duration-400.cursor-pointer(
+            :class="`hover:rounded-lg hover:bg-green-500 hover:shadow-xl ${item.active ? 'bg-green-300' : item.bgColor}`"
+            @click="selectedItem(itemIndex, item.active)"
+          )
+            img(:src="item.icon")
+            div.mt-2.font-black {{ item.title }}
 
-      div.p-5.col-span-4(v-if="!_.isEmpty(currentContent)")
-        img.mb-4.w-full.object-cover(:src="currentContent.headImage" style="height: 600px")
-        div(v-html="currentContent.html")
-
-        Gallery.my-6(:images="currentContent.galleryImages")
+    div.absolute.inset.h-full.transition-all.duration-500(
+      v-for="(item, itemIndex) in content.items"
+      :key="itemIndex"
+      class="w-2/4"
+      :class="`${item.bgColor} ${item.active ? 'item-transform-x-0' : 'item-transform-x-100'}`"
+    )
+      img.mb-4.w-full.object-cover(
+        :src="item.headImage"
+        class="h-2/4"
+      )
+      div.p-5.text-white
+        div.text-lg.font-bold {{ item.title }}
+        div.mt-5(v-html="item.html")
+        Gallery.my-6(:images="item.galleryImages")
 
 </template>
 
@@ -26,13 +41,15 @@ export default {
 
   data() {
     return {
-      currentContent: {},
-
       content: {
         items: [
           {
             title: 'Cleaning Service',
-            html: '<h1 class="mb-3">Cleaning Service</h1><p class="my-5">Sit aliqua nisi elit officia laboris occaecat ex. Non culpa amet irure ad irure amet officia dolore cupidatat minim incididunt tempor proident. Non proident eu irure irure incididunt. Ad dolor cillum dolor eu voluptate proident. Laborum sint veniam eiusmod amet ullamco fugiat nostrud magna nulla cupidatat sint. Magna cupidatat voluptate ea aliqua velit aliqua aliqua irure. Laborum adipisicing nostrud incididunt consectetur labore eu deserunt.</p><p class="my-5">Nostrud eu sunt exercitation reprehenderit dolore duis. Proident dolore aute ex incididunt veniam tempor exercitation deserunt aute laborum laborum excepteur deserunt. Qui non ex consectetur incididunt laboris elit consectetur adipisicing in culpa occaecat et officia aliquip.</p><p>Nostrud minim adipisicing reprehenderit mollit enim laborum aliqua do. Do officia mollit occaecat adipisicing officia. Cupidatat officia esse id id. Labore pariatur occaecat mollit qui deserunt consequat sit in minim. Laborum nisi anim veniam commodo consequat. Nostrud ipsum anim dolor proident sint cupidatat amet. Esse proident duis tempor ullamco officia veniam nulla tempor eu.</p>',
+            icon: 'https://img.icons8.com/external-linector-fill-linector/64/ffffff/external-cleaning-hotel-service-linector-fill-linector.png',
+            bgColor: 'bg-blue-400',
+
+            active: false,
+            html: '<div class="mt-3">Kami memberikan pelayanan kebersihan, kerapihan dan higienisasi dari sebuah gedung/bangunan baik indoor ataupun outdoor sehingga tercipta suasana yang nyaman dalam menunjang aktivitas sehari-hari.</div><div class="mt-3">Dengan diberi keterampilan yang baik serta didukung dengan peralatan dan chemical yang sesuai dengan standar kebersihan hotel, kami optimis dapat memberikan layanan yang terbaik bagi para pelanggan kami.</div>',
             headImage: '/images/cleaning-service.jpg',
             galleryImages: [
               'https://i.picsum.photos/id/151/600/400.jpg?blur=5&hmac=HG9Dtabq2kCfsx_M7NTR89pbnv7Par2OoHyj9xPqD3U',
@@ -43,7 +60,11 @@ export default {
           },
           {
             title: 'General Cleaning',
-            html: '<h1 class="mb-3">General Cleaning</h1><p class="my-5">Exercitation ut occaecat est culpa adipisicing et elit tempor dolor duis aliquip reprehenderit. Magna reprehenderit nostrud voluptate et reprehenderit Lorem esse laborum ullamco aliquip commodo. Officia voluptate labore mollit officia enim aliquip excepteur enim minim. Aute ea tempor reprehenderit proident mollit consequat non fugiat et esse tempor quis. Reprehenderit elit elit deserunt adipisicing.</p><p class="my-5">Fugiat commodo quis adipisicing laborum. Ea ipsum Lorem irure eu. Laborum consequat laboris laboris id occaecat incididunt esse aute et sint excepteur officia laboris. Laborum proident laboris qui est aliqua tempor ut mollit et voluptate id est. Sint est ullamco nisi dolor excepteur dolore eu ut ex consequat do irure.</p><p>Qui Lorem nulla minim irure ad culpa deserunt reprehenderit excepteur culpa cupidatat sunt ex consectetur. Et sunt nisi irure labore ad anim laboris duis ea magna adipisicing sint voluptate aute. Reprehenderit est cillum id eu eiusmod id commodo. Mollit cupidatat ipsum minim cupidatat irure. Duis fugiat quis laboris elit laborum excepteur. Laborum ad voluptate occaecat minim culpa. Eu non minim irure non et aute reprehenderit laboris nulla mollit.</p>',
+            icon: 'https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/ffffff/external-cleaning-labour-day-vitaliy-gorbachev-lineal-vitaly-gorbachev.png',
+            bgColor: 'bg-blue-300',
+
+            active: false,
+            html: '<div class="mt-3">BPI menyediakan pasukan petugas kebersihan guna melakukan pekerjaan pembersihan unit gedung, rumah, ruang-ruang secara menyeluruh dengan sistem treatment atau kontrak sesuai kebutuhan.</div>',
             headImage: '/images/general-cleaning.jpg',
             galleryImages: [
               'https://i.picsum.photos/id/151/600/400.jpg?blur=5&hmac=HG9Dtabq2kCfsx_M7NTR89pbnv7Par2OoHyj9xPqD3U',
@@ -54,7 +75,11 @@ export default {
           },
           {
             title: 'Gondola',
-            html: '<h1 class="mb-3">Gondola</h1><p class="my-5">Ex adipisicing fugiat dolor mollit tempor labore qui in tempor incididunt occaecat dolor. Nulla nulla deserunt esse in aute irure exercitation enim irure. Sunt nulla incididunt deserunt quis velit. Nulla tempor laborum mollit veniam non. Elit ullamco nisi incididunt et consequat exercitation nostrud ipsum ipsum.</p><p class="my-5">Excepteur laborum tempor eu incididunt culpa eiusmod. Aliqua eiusmod magna consequat labore duis consectetur excepteur aliquip. Adipisicing magna et aliquip deserunt aute commodo dolore nulla et Lorem. Quis quis consequat magna Lorem est laborum. Duis fugiat aute nostrud ipsum fugiat occaecat enim cillum ad quis fugiat tempor velit. Irure elit exercitation ipsum et irure irure consequat labore occaecat nisi.</p><p>Reprehenderit adipisicing non nulla eu laborum aliqua nisi adipisicing id consequat. Velit culpa consequat duis quis minim consectetur consectetur deserunt ea labore consectetur cupidatat velit. Deserunt mollit do irure ea aliqua culpa cillum. Fugiat excepteur elit culpa voluptate. Commodo labore Lorem et veniam veniam sint. Laborum proident quis ullamco excepteur exercitation pariatur duis. Quis consequat laboris nulla magna labore ut est aliqua magna cupidatat irure eiusmod.</p>',
+            icon: 'https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/ffffff/external-gondola-travel-flatart-icons-outline-flatarticons.png',
+            bgColor: 'bg-blue-400',
+
+            active: false,
+            html: '<div class="mt-3">BPI juga menyediakan tenaga ahli dalam gondola yg membuat menjadi lebih apik serta indah dipandang oleh mata</div>',
             headImage: '/images/gondola.jpg',
             galleryImages: [
               'https://i.picsum.photos/id/251/600/400.jpg?blur=5&hmac=-yBCjecz_MF9u_tZ1FvEWr6jvh6B2m8DNCvz6CjEmpo',
@@ -65,7 +90,11 @@ export default {
           },
           {
             title: 'Landscape',
-            html: '<h1 class="mb-3">Landscape</h1><p class="my-5">Adipisicing eiusmod ea occaecat sint. Do ut irure consequat mollit id mollit ipsum. Sit ut ut nostrud eu labore eu enim Lorem irure dolor incididunt dolore aute id. Non est laboris elit dolore commodo labore excepteur quis excepteur occaecat cillum do cupidatat magna. Consectetur est incididunt qui do quis incididunt consectetur ipsum ea adipisicing. Consequat aute fugiat eu mollit nulla in aliquip commodo magna nisi. Non Lorem ut in laborum.</p><p class="my-5">Esse aute est exercitation velit laborum ad sint non cillum nostrud anim ut. Labore amet non tempor ex. Occaecat do consequat magna amet velit. Mollit duis consectetur amet incididunt tempor nisi nulla nulla deserunt. Est voluptate aliqua laborum sint irure aute eu esse ex est exercitation dolore aliquip. Dolore dolor excepteur dolor aliqua.</p><p>Cupidatat quis ad est elit aute enim mollit irure ipsum incididunt laborum. Sunt incididunt officia aliqua reprehenderit ad. Consectetur consequat incididunt ea tempor cillum laboris cillum culpa eu tempor aliqua enim officia Lorem. Deserunt voluptate consectetur tempor cillum excepteur ut ex. Occaecat nulla veniam voluptate Lorem sint.</p>',
+            icon: 'https://img.icons8.com/external-photo3ideastudio-solid-photo3ideastudio/64/ffffff/external-park-spring-photo3ideastudio-solid-photo3ideastudio.png',
+            bgColor: 'bg-blue-300',
+
+            active: false,
+            html: '<div class="mt-3">BPI juga menyediakan tenaga ahli dalam menata landscape dan membuat suasana landscape menjadi lebih apik serta indah dipandang oleh mata</div>',
             headImage: '/images/landscape.jpg',
             galleryImages: [
               'https://i.picsum.photos/id/151/600/400.jpg?blur=5&hmac=HG9Dtabq2kCfsx_M7NTR89pbnv7Par2OoHyj9xPqD3U',
@@ -76,7 +105,11 @@ export default {
           },
           {
             title: 'Office Boy/Girl',
-            html: '<h1 class="mb-3">Office Boy/Girl</h1><p class="my-5">Ad exercitation Lorem eiusmod elit. Commodo officia labore ullamco sunt labore deserunt et sit quis cillum reprehenderit cupidatat. Duis sunt commodo et nostrud et et in officia cupidatat reprehenderit consequat qui cillum. Irure eu consequat aliquip cillum tempor aliquip laborum voluptate ut nulla aliquip proident ipsum officia.</p><p class="my-5">Dolore velit do quis in ex eu adipisicing excepteur anim. Aliqua sunt aliqua ut dolor consectetur voluptate. Id mollit excepteur qui incididunt. Irure sunt qui aliquip aliquip est ut quis dolor ipsum labore aliquip aute. Officia mollit occaecat aute mollit ad ad fugiat reprehenderit ex.</p><p>Magna ullamco duis deserunt tempor laboris velit. Officia ipsum culpa cillum mollit tempor aute esse irure laboris culpa culpa laborum. Ipsum ex in incididunt consequat est pariatur officia officia magna. Cillum sint officia anim quis ut est laboris sit irure mollit. Occaecat ex aliqua voluptate ipsum mollit eiusmod do aliquip ad et occaecat magna. Eu cillum culpa ullamco laboris reprehenderit. Laboris irure occaecat Lorem nulla Lorem aliquip consectetur.</p>',
+            icon: 'https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/ffffff/external-cleaning-stay-home-vitaliy-gorbachev-lineal-vitaly-gorbachev-1.png',
+            bgColor: 'bg-blue-400',
+
+            active: false,
+            html: '<div class="mt-3">kami menyediakan pramukarya untuk menangani pekerjaan administrasi yang disesuaikan dengan kebutuhan bisnis anda</div>',
             headImage: '/images/office-boy.jpg',
             galleryImages: [
               'https://i.picsum.photos/id/151/600/400.jpg?blur=5&hmac=HG9Dtabq2kCfsx_M7NTR89pbnv7Par2OoHyj9xPqD3U',
@@ -87,7 +120,11 @@ export default {
           },
           {
             title: 'Pramukarya',
-            html: '<h1 class="mb-3">Pramukarya</h1><p class="my-5">Sit ea minim proident aliqua non sit incididunt fugiat ut nulla. Do minim ad sit pariatur veniam est adipisicing deserunt. Quis Lorem in sunt eiusmod laborum laboris. Velit esse in sunt voluptate mollit irure elit duis. Officia est aute Lorem quis aliquip officia. Ex aliquip enim eu occaecat id est in. Cupidatat reprehenderit reprehenderit do adipisicing veniam commodo anim eiusmod id.</p><p class="my-5">Exercitation officia ut occaecat elit nostrud Lorem sit mollit duis in nisi nisi. Consequat non mollit velit ea commodo. Nostrud sunt do labore cupidatat ullamco quis laborum consequat sit aute sit do. Cillum est proident eiusmod id laborum culpa.</p><p>Magna aute do anim eiusmod adipisicing. Id ex laborum ut ad mollit elit exercitation enim nulla et esse fugiat mollit deserunt. Officia ex anim ad proident officia et amet non irure ea aliquip reprehenderit. Do proident excepteur deserunt qui minim adipisicing sint proident ut commodo consequat sint non dolor. Ullamco nulla eiusmod occaecat reprehenderit tempor nulla amet nostrud ipsum.</p>',
+            icon: 'https://img.icons8.com/ios/50/ffffff/pottery-workshop.png',
+            bgColor: 'bg-blue-300',
+
+            active: false,
+            html: '<div class="mt-3">kami menyediakan pramukarya untuk menangani pekerjaan administrasi yang disesuaikan dengan kebutuhan bisnis anda</div>',
             headImage: '/images/pramukarya.jpg',
             galleryImages: [
               'https://i.picsum.photos/id/160/600/400.jpg?blur=5&hmac=MnZEIyuId2qOWByGhzt544bXAk8Scz9ieQPU72YivwA',
@@ -98,7 +135,11 @@ export default {
           },
           {
             title: 'Pramusaji',
-            html: '<h1 class="mb-3">Pramusaji</h1><p class="my-5">Adipisicing laborum exercitation anim enim amet sunt nisi. Magna ullamco adipisicing aliqua amet magna tempor labore ipsum. Commodo culpa culpa et non cillum anim sint exercitation irure minim nulla. Commodo minim ea irure occaecat consequat consectetur qui laborum est. Exercitation dolore sit reprehenderit aute elit elit commodo reprehenderit eiusmod irure et. Magna laborum culpa in irure culpa eiusmod excepteur ut ullamco laborum occaecat sunt cupidatat. Sit mollit non Lorem excepteur ipsum anim laboris duis ex do mollit dolor sint dolor.</p><p class="my-5">Aliqua eu id nulla aliqua. Nostrud laboris eiusmod nulla sit. Lorem dolor culpa deserunt et eu do velit eiusmod officia incididunt non. Mollit cupidatat ea pariatur et aliquip occaecat in ad deserunt do anim. Anim aute eiusmod proident esse. Duis reprehenderit laborum commodo et non eiusmod. Minim mollit ex enim labore laborum dolore laborum anim aliqua qui incididunt nulla.</p><p>Excepteur exercitation deserunt duis qui ea esse do consectetur exercitation ex sit consequat amet. Laboris ullamco magna velit duis do consectetur incididunt Lorem ea aliquip sint qui nostrud. Eu commodo laboris incididunt nostrud mollit minim occaecat ullamco enim sit amet eiusmod. Laboris tempor non velit enim. Ea est enim ipsum elit sunt sint anim cupidatat cillum deserunt magna irure. Velit eiusmod exercitation veniam nulla mollit mollit aliquip deserunt aute consequat minim sunt enim. Sit nisi officia laboris commodo laborum non sit irure.</p>',
+            icon: 'https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/64/ffffff/external-buffet-wedding-kmg-design-detailed-outline-kmg-design.png',
+            bgColor: 'bg-blue-300',
+
+            active: false,
+            html: '<div class="mt-3">Kami menyediakan petugas pramusaji yang dapat ditempatkan di rumah makan, restoran atau kafe.</div>',
             headImage: '/images/pramusaji.jpg',
             galleryImages: [
               'https://i.picsum.photos/id/151/600/400.jpg?blur=5&hmac=HG9Dtabq2kCfsx_M7NTR89pbnv7Par2OoHyj9xPqD3U',
@@ -113,13 +154,28 @@ export default {
   },
 
   mounted() {
-    this.currentContent = this.content.items[0]
-
     setTimeout(() => {
       this.$store.commit('setLoading', false)
     }, 200)
   },
+
+  methods: {
+    selectedItem(index, bool) {
+      for (const item of this.content.items) {
+        item.active = false
+      }
+
+      this.content.items[index].active = !bool
+    },
+  },
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.item-transform-x-0 {
+  transform: translateX(0);
+}
+.item-transform-x-100 {
+  transform: translateX(-100%);
+}
+</style>
