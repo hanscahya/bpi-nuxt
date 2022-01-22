@@ -43,7 +43,7 @@ export default {
 
   img {
     transition: all 0.35s ease;
-    filter: grayscale(100%);
+    filter: grayscale(80%);
 
     &:hover {
       transform: scale(110%);

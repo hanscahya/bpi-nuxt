@@ -13,7 +13,6 @@
         :link="item.link"
       )
 
-    //- div.container.self-center(class="sm:px-10 md:px-20 lg:px-40")
     OneColumnContent(
       :title="content.section2.title"
       :paragraph="content.section2.paragraph"
@@ -24,8 +23,6 @@
       :is-button-animate="true"
     )
 
-    //- div.relative.bg-center(:style="{ 'background-image': `url('${content.section3.bgImage}')` }")
-      div.absolute.inset-0.bg-gray-400.bg-opacity-50.z-10
     div.bg-gray-200
       div.py-10(class="sm:px-10 md:px-20 lg:px-40")
         div.text-4xl.font-bold.text-center Our Client
@@ -39,7 +36,7 @@
           :icon="item.icon"
         )
     
-    Gallery.mb-10(:images="content.section4.images")
+    Gallery(:images="content.section4.images")
 
 </template>
 
@@ -114,9 +111,8 @@ export default {
         section2: {
           title: 'Tentang Kami',
           paragraph:
-            'PT. Bangunpapan Idaman (BPI) adalah perusahaan yg bergerak dalam bidang spesialist penyedia jasa kebersihan (cleaning service) di indonesia. Yg mana saat ini memiliki jumlah pekerja lebih dari 3000 pekerja. Berdasarkan dengan akta pendirian perusahaan, PT. Bangunpapan Idaman (BPI) resmi didirikan pada tanggal 04 Agustus 2006. BPI sudah memiliki pengalaman lebih dari satu dekade menjadi partner setia klien-klien kami baik dari Apartemen, Perkantoran, RS, Pabrik, universitas, sekolah, pusat perbelanjaan dll, sejak pertama kali didirikan Di tahun 2006, selama 14 tahun beroperasi, BPI telah menjadi salah satu perusahaan penyedia layanan fasilitas yg profesional & mengutamakan kepuasan klien klien kami serta didukung dengan Sumber daya manusia yg dapat diandalkan & berlandaskan kejujuran & profesionalitas.',
-          image:
-            'https://img.icons8.com/color/240/000000/commercial-development-management.png',
+            'PT. Bangunpapan Idaman (BPI) adalah perusahaan yg bergerak dalam bidang spesialist penyedia jasa kebersihan (cleaning service) di indonesia.',
+          image: '/images/logo.png',
           bgImage: '/images/slider/cs.jpg',
           buttonLink: '/about-us',
           buttonText: 'Read More',
@@ -248,22 +244,22 @@ export default {
         // gallery
         section4: {
           images: [
+            '/images/gallery/IMG_3060.jpg',
             '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
-            '/images/gallery/IMG_2982.jpg',
+            '/images/gallery/IMG_3407.jpg',
+            '/images/gallery/IMG_3043.jpg',
+            '/images/gallery/IMG_3450.jpg',
+            '/images/gallery/IMG_2973.jpg',
+            '/images/gallery/IMG_2971.jpg',
+            '/images/gallery/IMG_3107.jpg',
+            '/images/gallery/IMG_3069.jpg',
+            '/images/gallery/IMG_3383.jpg',
+            '/images/gallery/IMG_3267.jpg',
+            '/images/gallery/IMG_3401.jpg',
+            '/images/gallery/IMG_3229.jpg',
+            '/images/gallery/IMG_3124.jpg',
+            '/images/gallery/IMG_3281.jpg',
+            '/images/gallery/IMG_3355.jpg',
           ],
         },
       },

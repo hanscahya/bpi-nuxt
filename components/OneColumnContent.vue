@@ -6,9 +6,10 @@
     div.bg-overlay
 
     div.container.relative.flex.flex-col.justify-center.items-center.text-center.z-20.font-bold
-      img.w-52.mb-5(:src="image")
+      div.mb-5.p-5.w-80.bg-white.rounded-xl.bg-opacity-80
+        img.w-full(:src="image")
       div.font-black.text-3xl {{ title }}
-      p.mt-5(class="w-5/6") {{ paragraph }}
+      p.mt-5.text-lg(class="w-5/6") {{ paragraph }}
 
       div.button-container
         button.mt-5.bg-blue-500.text-white.font-bold.py-2.px-4.rounded-3xl(
