@@ -35,13 +35,13 @@
     div.mx-auto.my-10.p-5.text-center
       div.text-sm.font-black.text-blue-400 Jajaran Pimpinan
     ThumbnailProfile.mb-10(
-      :items="content.section3.items.slice(0, 5)"
+      :items="content.section3.items.slice(0, 3)"
     )
 
     div.mx-auto.my-10.p-5.text-center
       div.text-sm.font-black.text-blue-400 Manager
     ThumbnailProfile.mb-10(
-      :items="content.section3.items.slice(5, 8)"
+      :items="content.section3.items.slice(3, 8)"
     )
 
     div.mx-auto.my-10.p-5.text-center

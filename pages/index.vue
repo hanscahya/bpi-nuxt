@@ -27,7 +27,7 @@
       div.py-10(class="sm:px-10 md:px-20 lg:px-40")
         div.text-4xl.font-bold.text-center Our Client
         InfiniteSlider.mt-10(:items="content.section3.items1")
-      div.relative.pt-14.pb-28.px-28.grid.grid-cols-4.gap-2.text-center.z-20
+      div.relative.pt-14.px-28.grid.grid-cols-4.gap-2.text-center.z-20
         BadgeCard.mx-4(
           v-for="(item, itemIndex) in content.section3.items2"
           :key="itemIndex"
@@ -35,7 +35,14 @@
           :value="item.value"
           :icon="item.icon"
         )
-    
+      div.relative.pt-14.pb-28.px-28.flex.justify-center.z-20
+        img.mx-4(
+          v-for="(item, itemIndex) in content.section3.items3"
+          :key="itemIndex"
+          :src="item.icon"
+          width="150px"
+        )
+
     Gallery(:images="content.section4.images")
 
 </template>
@@ -47,7 +54,7 @@ export default {
       content: {
         slides: [
           {
-            image: '/images/slider/cs.jpg',
+            image: '/images/slider/sekolah.jpg',
             title: 'GENERAL CLEANING SERVICE SOLUTIONS',
             subtitle: 'PT. Bangunpapan Idaman',
             paragraph:
@@ -55,7 +62,7 @@ export default {
             link: '',
           },
           {
-            image: '/images/slider/vim.jpg',
+            image: '/images/slider/rumah_sakit.jpg',
             title: 'GREAT STAFF AND BACK OFFICE SUPPORT',
             subtitle: 'PT. Bangunpapan Idaman',
             paragraph:
@@ -238,6 +245,20 @@ export default {
                 'https://img.icons8.com/fluency-systems-regular/96/000000/prize.png',
               label: 'Penghargaan',
               value: 12,
+            },
+          ],
+          items3: [
+            {
+              icon: '/images/iso-9001-logo.png',
+              label: 'Quality Management System',
+            },
+            {
+              icon: '/images/iso-14001-logo.png',
+              label: 'Environmental management system',
+            },
+            {
+              icon: '/images/iso-45001-logo.png',
+              label: 'Occupational Health & safety management System',
             },
           ],
         },

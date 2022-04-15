@@ -13,7 +13,7 @@
           div.py-1.menu-item.px-3(@click="$router.push(menu.link)") {{ menu.label }}
 
         div.p-3
-          button.px-4.py-1.rounded-full.bg-green-500.text-white BPI Application
+          Dropdown
 
 </template>
 

@@ -12,7 +12,7 @@
             @click="selectedItem(itemIndex, item.active)"
           )
             img(:src="item.icon")
-            div.mt-2.font-black {{ item.title }}
+            //- div.mt-2.font-black {{ item.title }}
 
     div.absolute.inset.h-full.transition-all.duration-500(
       v-for="(item, itemIndex) in content.items"
@@ -74,7 +74,7 @@ export default {
             ],
           },
           {
-            title: 'Gondola',
+            title: 'Fasad',
             icon: 'https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/ffffff/external-gondola-travel-flatart-icons-outline-flatarticons.png',
             bgColor: 'bg-blue-400',
 
@@ -104,7 +104,7 @@ export default {
             ],
           },
           {
-            title: 'Office Boy/Girl',
+            title: 'Office Support',
             icon: 'https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/ffffff/external-cleaning-stay-home-vitaliy-gorbachev-lineal-vitaly-gorbachev-1.png',
             bgColor: 'bg-blue-400',
 
@@ -140,6 +140,21 @@ export default {
 
             active: false,
             html: '<div class="mt-3">Kami menyediakan petugas pramusaji yang dapat ditempatkan di rumah makan, restoran atau kafe.</div>',
+            headImage: '/images/pramusaji.jpg',
+            galleryImages: [
+              'https://i.picsum.photos/id/151/600/400.jpg?blur=5&hmac=HG9Dtabq2kCfsx_M7NTR89pbnv7Par2OoHyj9xPqD3U',
+              'https://i.picsum.photos/id/251/600/400.jpg?blur=5&hmac=-yBCjecz_MF9u_tZ1FvEWr6jvh6B2m8DNCvz6CjEmpo',
+              'https://i.picsum.photos/id/158/600/400.jpg?blur=5&hmac=Uqw0eN05Dp002K8vl3LAC6i4L6wq_4wPxNWzAd4j5P0',
+              'https://i.picsum.photos/id/160/600/400.jpg?blur=5&hmac=MnZEIyuId2qOWByGhzt544bXAk8Scz9ieQPU72YivwA',
+            ],
+          },
+          {
+            title: 'Security',
+            icon: 'https://img.icons8.com/ios/50/ffffff/security-guard.png',
+            bgColor: 'bg-blue-300',
+
+            active: false,
+            html: '<div class="mt-3">Kami menyediakan petugas keamanan yang dapat ditempatkan dilokasi untuk kenyamanan anda.</div>',
             headImage: '/images/pramusaji.jpg',
             galleryImages: [
               'https://i.picsum.photos/id/151/600/400.jpg?blur=5&hmac=HG9Dtabq2kCfsx_M7NTR89pbnv7Par2OoHyj9xPqD3U',
