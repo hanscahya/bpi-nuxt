@@ -34,8 +34,8 @@
           )
 
         div.flex.justify-between.items-center
-          button.bg-green-500.text-white.font-bold.py-2.px-4.rounded(
-            class="hover:bg-green-700 focus:outline-none focus:shadow-outline"
+          button.bg-primary.text-white.font-bold.py-2.px-4.rounded(
+            class="hover:bg-blue-700 focus:outline-none focus:shadow-outline"
           ) Submit
 
     div.mt-20.px-20
@@ -48,7 +48,7 @@
           @mouseleave="tel1 = false"
         )
           b-icon(icon="telephone" font-scale="1.5")
-          span(v-if="!tel1") &emsp;Telephone 1
+          span(v-if="tel1") &emsp;Call Now
           span(v-else ) &emsp;021 22251127
         a.py-5.flex.justify-center.items-center.border.rounded-xl.cursor-pointer.transition.duration-200.ease-in(
           class="hover:bg-gray-50 hover:shadow-md"
@@ -57,7 +57,7 @@
           @mouseleave="tel2 = false"
         )
           b-icon(icon="telephone" font-scale="1.5")
-          span(v-if="!tel2") &emsp;Telephone 2
+          span(v-if="tel2") &emsp;Call Now
           span(v-else ) &emsp;021 22251128
         div.py-5.flex.justify-center.items-center.border.rounded-xl.cursor-pointer.transition.duration-200.ease-in(
           class="hover:bg-gray-50 hover:shadow-md"
@@ -68,11 +68,25 @@
         a.py-5.flex.justify-center.items-center.border.rounded-xl.cursor-pointer.transition.duration-200.ease-in(
           class="hover:bg-gray-50 hover:shadow-md"
           href="mailto:salessupport@bpioke.com"
+          @mouseover="em = true"
+          @mouseleave="em = false"
         )
           b-icon(icon="envelope" font-scale="1.5")
-          span &emsp;Email
+          span(v-if="em") &emsp;Send Email
+          span(v-else ) &emsp;salessupport@bpioke.com
 
-    div#mapbox.mt-20.px-20
+    //- div#mapbox.mt-20.px-20
+
+    div.mt-20.px-20
+      h2.text-center Locations
+      p.mt-2.text-center We have comprehensive offices and branches to provide the best service for our clients.
+      div.mt-10.grid.grid-cols-2.gap-10
+        img.h-full.object-cover(src="/images/head-office.jpeg")
+        div.flex.flex-col.justify-center
+          h3 Head office
+          p PT . BANGUNPAPAN IDAMAN
+          p (021) 22251127
+          p Ruko CBD, Jl. Palem Jepang No.20, RT.001/RW.009, Panunggangan Bar., Kec. Cibodas, Kota Tangerang, Banten 15810
 
 </template>
 

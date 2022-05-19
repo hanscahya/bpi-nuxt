@@ -10,7 +10,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Quicksand', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Poppins', 'Helvetica', 'Arial', 'sans-serif'],
+      },
+      colors: {
+        primary: '#24305E',
+        lightgray: '#A8D0E6',
       },
     },
   },

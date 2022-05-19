@@ -8,11 +8,11 @@
       div.px-10.flex.flex-wrap.justify-center.items-center
         div(v-for="(item, itemIndex) in content.items" :key="itemIndex" class="w-4/12")
           div.m-1.h-40.flex.flex-col.justify-center.items-center.text-white.transition-all.duration-400.cursor-pointer(
-            :class="`hover:rounded-lg hover:bg-green-500 hover:shadow-xl ${item.active ? 'bg-green-300' : item.bgColor}`"
+            :class="['hover:rounded-lg', !item.disabled && 'hover:bg-green-500', 'hover:shadow-xl', item.active ? 'bg-green-300' : item.bgColor]"
             @click="selectedItem(itemIndex, item.active)"
           )
-            img(:src="item.icon")
-            //- div.mt-2.font-black {{ item.title }}
+            img(v-if="!item.disabled" :src="item.icon")
+            div.mt-2.font-black(v-else) {{ item.title }}
 
     div.absolute.inset.h-full.transition-all.duration-500(
       v-for="(item, itemIndex) in content.items"
@@ -21,10 +21,11 @@
       :class="`${item.bgColor} ${item.active ? 'item-transform-x-0' : 'item-transform-x-100'}`"
     )
       img.mb-4.w-full.object-cover(
+        v-if="!item.disabled"
         :src="item.headImage"
         class="h-2/4"
       )
-      div.p-5.text-white
+      div.p-5.text-white(v-if="!item.disabled")
         div.text-lg.font-bold {{ item.title }}
         div.mt-5(v-html="item.html")
         Gallery.my-6(:images="item.galleryImages")
@@ -104,9 +105,14 @@ export default {
             ],
           },
           {
+            disabled: true,
+            title: 'OUR SERVICE',
+            bgColor: 'bg-gray-400',
+          },
+          {
             title: 'Office Support',
             icon: 'https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/ffffff/external-cleaning-stay-home-vitaliy-gorbachev-lineal-vitaly-gorbachev-1.png',
-            bgColor: 'bg-blue-400',
+            bgColor: 'bg-blue-300',
 
             active: false,
             html: '<div class="mt-3">kami menyediakan pramukarya untuk menangani pekerjaan administrasi yang disesuaikan dengan kebutuhan bisnis anda</div>',
@@ -121,7 +127,7 @@ export default {
           {
             title: 'Pramukarya',
             icon: 'https://img.icons8.com/ios/50/ffffff/pottery-workshop.png',
-            bgColor: 'bg-blue-300',
+            bgColor: 'bg-blue-400',
 
             active: false,
             html: '<div class="mt-3">kami menyediakan pramukarya untuk menangani pekerjaan administrasi yang disesuaikan dengan kebutuhan bisnis anda</div>',
@@ -151,7 +157,7 @@ export default {
           {
             title: 'Security',
             icon: 'https://img.icons8.com/ios/50/ffffff/security-guard.png',
-            bgColor: 'bg-blue-300',
+            bgColor: 'bg-blue-400',
 
             active: false,
             html: '<div class="mt-3">Kami menyediakan petugas keamanan yang dapat ditempatkan dilokasi untuk kenyamanan anda.</div>',

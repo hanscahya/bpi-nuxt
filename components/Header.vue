@@ -61,11 +61,11 @@ export default {
   }
 
   &.active .menu-item {
-    @apply border-blue-200;
+    @apply border-primary;
   }
 
   &:hover .menu-item {
-    @apply border-blue-300;
+    @apply border-primary;
   }
 }
 </style>

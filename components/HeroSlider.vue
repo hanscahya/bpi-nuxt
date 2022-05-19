@@ -6,13 +6,13 @@
           img(:src="item.image")
         div.absolute.inset-0.flex.flex-col.justify-center.items-center.text-white
           div.animate-title.text-center.mx-auto(class="w-4/6")
-            div.text-5xl.font-black {{ item.title.toUpperCase() }}
+            div.text-5xl.font-black.text-shadow.py-3 {{ item.title.toUpperCase() }}
           div.mt-5.mx-auto.text-center.animate-subtitle(class="w-4/6")
-            div.text-xl.font-bold {{ item.subtitle }}
-            div.text-md.font-bold {{ item.paragraph }}
+            div.text-xl.font-bold.text-shadow.pt-3 {{ item.subtitle }}
+            div.text-md.font-bold.text-shadow.pb-3 {{ item.paragraph }}
 
       div.swiper-pagination.pb-3(slot="pagination")
-    
+
     div.navigation-wrapper.text-white
       div.animate-arrow.text-4xl.px-3(@click="swiper.slidePrev()")
         b-icon(icon="chevron-left")
@@ -104,5 +104,9 @@ export default {
   &:hover {
     transform: scale(1.3);
   }
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 20px #0006;
 }
 </style>

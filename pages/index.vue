@@ -23,7 +23,7 @@
       :is-button-animate="true"
     )
 
-    div.bg-gray-200
+    div.bg-lightgray
       div.py-10(class="sm:px-10 md:px-20 lg:px-40")
         div.text-4xl.font-bold.text-center Our Client
         InfiniteSlider.mt-10(:items="content.section3.items1")
@@ -70,7 +70,7 @@ export default {
             link: '',
           },
           {
-            image: '/images/slider/management.jpg',
+            image: '/images/slider/staff-welcoming.jpg',
             title: 'Great Corporate Client',
             subtitle: 'PT. Bangunpapan Idaman',
             paragraph:
@@ -78,7 +78,7 @@ export default {
             link: '',
           },
           {
-            image: '/images/slider/tech.jpg',
+            image: '/images/slider/gardener.jpg',
             title: 'Technician Ready',
             subtitle: 'PT. Bangunpapan Idaman',
             paragraph:

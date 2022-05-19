@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.bg-blue-100
+  div
     Header.header
     Nuxt.nuxt-container
     Footer
@@ -54,6 +54,6 @@ export default {
   @apply mx-auto;
   @apply bg-white;
 
-  max-width: 1290px;
+  max-width: 1440px;
 }
 </style>

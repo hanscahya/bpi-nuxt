@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /**
  * This injects Tailwind's base styles and any base styles registered by
@@ -11,13 +12,13 @@
  * registered by plugins.
  */
 @tailwind components;
- 
+
 /**
  * This injects Tailwind's utility classes and any utility classes registered
  * by plugins.
  */
 @tailwind utilities;
- 
+
 /**
  * Use this directive to control where Tailwind injects the responsive
  * variations of each utility.

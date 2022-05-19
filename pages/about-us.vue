@@ -2,6 +2,19 @@
   div.flex.flex-col
     div.mt-10.grid.grid-cols-2
       img.object-cover(src="/images/about-us.jpg")
+      //- video
+      //-   source(src="")
+      //- video(
+      //-   ref="vid"
+      //-   playsinline
+      //-   autoplay
+      //-   loop
+      //-   controls
+      //-   preload="none"
+      //-   src="https://www.youtube.com/watch?v=xkWRN5-El5c"
+      //- )
+      //- client-only
+        youtube(video-id="xkWRN5-El5c")
       div.p-5.flex.flex-col.justify-center.items-start
         div.text-3xl.font-black Tentang BPI
         div.mt-3.text-lg(class="w-10/12") Pengalaman dalam bidang standar kebersihan hotel membuat BPU menjadi perusahaan terbaik

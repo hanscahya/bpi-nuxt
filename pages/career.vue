@@ -29,7 +29,7 @@
               class="focus:outline-none focus:shadow-outline"
               @change="filterJob()"
             )
-    
+
       //- jobs
       div.section-3.grid.grid-cols-6(v-if="!_.isEmpty(content.body.jobs)")
         div.col-span-4.col-start-2
@@ -97,9 +97,9 @@
                 h6 Requirement
                 p(v-html="popup_content.requirement")
 
-          b-row
+          b-row.mt-3
             b-col.text-center
-              b-button.apply-now-btn(@click="windowOpen('https://forms.gle/6NuQy92uKzocT1c17', '_self')") APPLY NOW
+              b-button.apply-now-btn(@click="") APPLY NOW
               div.mt-3
                 span.cursor-pointer(@click="popup = false") Close
 
@@ -218,8 +218,8 @@ export default {
 
     button {
       @apply border;
-      @apply bg-blue-600;
-      @apply border-blue-600;
+      @apply bg-primary;
+      @apply border-primary;
 
       padding: 10px 16px;
 
@@ -295,14 +295,14 @@ export default {
 
     h5,
     h6 {
-      font-family: 'Lufga-Bold';
-      // font-weight: 900;
+      font-weight: 900;
     }
 
     button {
+      @apply bg-primary;
+      @apply border-primary;
+
       padding: 12px 16px;
-      background-color: #1b21cc;
-      border: 1px solid #1b21cc;
       border-radius: 8px;
       color: #fff;
       white-space: nowrap;

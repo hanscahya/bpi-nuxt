@@ -25,7 +25,8 @@
     "tailwindcss": "^2.2.19",
     "vue-awesome-swiper": "^4.1.1",
     "vue-debounce": "^3.0.1",
-    "vue-lodash": "^2.1.2"
+    "vue-lodash": "^2.1.2",
+    "vue-youtube-embed": "^2.2.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",

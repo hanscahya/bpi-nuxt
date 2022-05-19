@@ -1,7 +1,7 @@
 <template>
   <div class="dropdown inline-block relative">
     <button
-      class="inline-flex items-center px-4 py-1 rounded-full bg-green-500 text-white"
+      class="inline-flex items-center px-4 py-1 rounded-full bg-primary text-white"
     >
       <span class="mr-1">BPI Access</span>
       <svg
@@ -17,7 +17,7 @@
     <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
       <li class="">
         <a
-          class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+          class="rounded-t bg-gray-200 hover:bg-gray-300 py-2 px-4 block whitespace-nowrap"
           href="#"
         >
           BPI e-attendance
@@ -25,7 +25,7 @@
       </li>
       <li class="">
         <a
-          class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+          class="bg-gray-200 hover:bg-gray-300 py-2 px-4 block whitespace-nowrap"
           href="#"
         >
           BPI
