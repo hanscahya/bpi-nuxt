@@ -81,7 +81,7 @@
       h2.text-center Locations
       p.mt-2.text-center We have comprehensive offices and branches to provide the best service for our clients.
       div.mt-10.grid.grid-cols-2.gap-10
-        img.h-full.object-cover(src="/images/head-office.jpeg")
+        img.h-full.object-cover(src="/images/head-office.jpeg" @click="windowOpen('https://goo.gl/maps/UWxXf2Au4wWE4BH97')")
         div.flex.flex-col.justify-center
           h3 Head office
           p PT . BANGUNPAPAN IDAMAN
