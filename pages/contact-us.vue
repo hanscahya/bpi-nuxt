@@ -77,21 +77,29 @@
 
     //- div#mapbox.mt-20.px-20
 
-    div.mt-20.px-20
+    div.mt-20.mb-10.px-20
       h2.text-center Locations
-      p.mt-2.text-center We have comprehensive offices and branches to provide the best service for our clients.
-      div.mt-10.grid.grid-cols-2.gap-10
-        img.h-full.object-cover(src="/images/head-office.jpeg" @click="windowOpen('https://goo.gl/maps/UWxXf2Au4wWE4BH97')")
-        div.flex.flex-col.justify-center
-          h3 Head office
-          p PT . BANGUNPAPAN IDAMAN
-          p (021) 22251127
-          p Ruko CBD, Jl. Palem Jepang No.20, RT.001/RW.009, Panunggangan Bar., Kec. Cibodas, Kota Tangerang, Banten 15810
+      p.mt-2.mb-5.text-center We have comprehensive offices and branches to provide the best service for our clients.
+
+      div.grid.grid-cols-2.gap-10
+        LocationCard(
+          v-for="(location, locationIndex) in locations"
+          :locationName="location.locationName"
+          :locationImage="location.locationImage"
+          :gmapsURL="location.gmapsURL"
+          :addressLines="location.addressLines"
+        )
 
 </template>
 
 <script>
+import LocationCard from '@/components/LocationCard.vue'
+
 export default {
+  components: {
+    LocationCard,
+  },
+
   data() {
     return {
       form: {
@@ -107,6 +115,29 @@ export default {
 
       map: null,
       default_map: [106.6125053, -6.2189436],
+
+      locations: [
+        {
+          locationName: 'Head office',
+          locationImage: '/images/head-office.jpeg',
+          gmapsURL: 'https://goo.gl/maps/UWxXf2Au4wWE4BH97',
+          addressLines: [
+            'PT . BANGUNPAPAN IDAMAN',
+            '(021) 22251127',
+            'Ruko CBD, Jl. Palem Jepang No.20, RT.001/RW.009, Panunggangan Bar., Kec. Cibodas, Kota Tangerang, Banten 15810',
+          ],
+        },
+        {
+          locationName: 'Branch office',
+          locationImage: '/images/branch-office.jpeg',
+          gmapsURL: 'https://goo.gl/maps/MsoS5WypYioV4sBA6',
+          addressLines: [
+            'Ruko Purnawirawan Regency No. 5',
+            'Jl. Purnawirawan, Gunter, Bandar Lampung',
+            'Telp. +62 852 1919 4454 | +62 821 8610 4844',
+          ],
+        },
+      ],
     }
   },
 
