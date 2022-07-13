@@ -20,7 +20,6 @@ export default {
 
   watch: {
     $route() {
-      console.log('hello')
       this.$store.commit('setLoading', true)
     },
   },

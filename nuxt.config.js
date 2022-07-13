@@ -4,7 +4,6 @@ export default {
   },
 
   // Convert to Static Site Generation
-  // Convert to Static Site Generation
   target: 'static',
   generate: {
     // fix netlify redirecting to 404 not found

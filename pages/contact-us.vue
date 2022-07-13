@@ -84,6 +84,7 @@
       div.grid.grid-cols-2.gap-10
         LocationCard(
           v-for="(location, locationIndex) in locations"
+          :key="locationIndex"
           :locationName="location.locationName"
           :locationImage="location.locationImage"
           :gmapsURL="location.gmapsURL"
