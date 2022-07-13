@@ -27,20 +27,25 @@
       div.py-10(class="sm:px-10 md:px-20 lg:px-40")
         div.text-4xl.font-bold.text-center Our Client
         InfiniteSlider.mt-10(:items="content.section3.items1")
-      div.relative.pt-14.px-28.grid.grid-cols-4.gap-2.text-center.z-20
-        BadgeCard.mx-4(
+      div.relative.grid.gap-2.text-center.z-20(
+        class="pt-4 md:pt-14 px-3 md:px-28 grid-cols-2 md:grid-cols-4"
+      )
+        BadgeCard(
           v-for="(item, itemIndex) in content.section3.items2"
+          class="mx-0 md:mx-4"
           :key="itemIndex"
           :label="item.label"
           :value="item.value"
           :icon="item.icon"
         )
-      div.relative.pt-14.pb-28.px-28.flex.justify-center.z-20
+      div.relative.pt-14.px-28.flex.justify-center.z-20(
+        class="pb-10 md:pb-28"
+      )
         img.mx-4(
           v-for="(item, itemIndex) in content.section3.items3"
           :key="itemIndex"
           :src="item.icon"
-          width="150px"
+          class="w-20 md:w-28"
         )
 
     Gallery(:images="content.section4.images")

@@ -1,8 +1,15 @@
 <template lang="pug">
-  swiper.relative.z-10(ref="infiniteSwiper" :options="swiperOptions")
+  swiper.relative.z-10(
+    v-if="swiperOptions.slidesPerView"
+    ref="infiniteSwiper"
+    :options="swiperOptions"
+  )
     swiper-slide(v-for="(item, contentIndex) in items" :key="contentIndex")
       div.mx-3.bg-white.flex.items-center.rounded-xl.animate
-        img.p-2.w-40.h-40.mx-auto.object-contain(:src="item.image")
+        img.p-2.mx-auto.object-contain(
+          class="w-20 md:w-40 h-20 md:h-40"
+          :src="item.image"
+        )
 
 </template>
 
@@ -19,16 +26,12 @@ export default {
     return {
       swiperOptions: {
         loop: true,
-        slidesPerView: 5,
+        slidesPerView: null,
         initialSlide: 0,
         effect: 'slide',
         speed: 2000,
         slideClass: 'swiper-slide',
-        autoplay: {
-          delay: 0,
-          pauseOnMouseEnter: true,
-          disableOnInteraction: false,
-        },
+        autoplay: false,
       },
     }
   },
@@ -37,6 +40,11 @@ export default {
     swiper() {
       return this.$refs.infiniteSwiper.$swiper
     },
+  },
+
+  mounted() {
+    if (document.body.clientWidth < 768) this.swiperOptions.slidesPerView = 3
+    else this.swiperOptions.slidesPerView = 5
   },
 }
 </script>

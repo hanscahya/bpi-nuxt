@@ -2,8 +2,8 @@
   //- div.grid.grid-cols-2.gap-4
   div.px-5.py-10.flex(
     :class="layout === 'default'\
-      ? 'sm:flex-col md:flex-row'\
-      : 'sm:flex-col md:flex-row-reverse'"
+      ? 'flex-col md:flex-row'\
+      : 'flex-col md:flex-row-reverse'"
   )
     div.p-10.flex-1.flex.flex-col.justify-center(
       :class="layout === 'default'\
@@ -20,8 +20,6 @@
     )
       img.animate.rounded-xl(class="w-10/12" :src="image")
 
-    
-  
 </template>
 
 <script>

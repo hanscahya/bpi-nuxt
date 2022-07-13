@@ -3,11 +3,14 @@
     swiper.relative.z-10(ref="heroSwiper" :options="swiperOptions")
       swiper-slide(v-for="(item, contentIndex) in items" :key="contentIndex")
         div
-          img(:src="item.image")
+          img.object-cover(
+            class="h-screen md:h-auto"
+            :src="item.image"
+          )
         div.absolute.inset-0.flex.flex-col.justify-center.items-center.text-white
-          div.animate-title.text-center.mx-auto(class="w-4/6")
+          div.animate-title.text-center.mx-auto(class="w-5/6 md:w-4/6")
             div.text-5xl.font-black.text-shadow.py-3 {{ item.title.toUpperCase() }}
-          div.mt-5.mx-auto.text-center.animate-subtitle(class="w-4/6")
+          div.mt-5.mx-auto.text-center.animate-subtitle(class="w-5/6 md:w-4/6")
             div.text-xl.font-bold.text-shadow.pt-3 {{ item.subtitle }}
             div.text-md.font-bold.text-shadow.pb-3 {{ item.paragraph }}
 

@@ -1,6 +1,8 @@
 <template lang="pug">
   div
-    div.grid.grid-cols-4.gap-1
+    div.grid.gap-1(
+      class="grid-cols-2 md:grid-cols-4"
+    )
       div.img-container(v-for="(image, imageIndex) in images" :key="imageIndex")
         div.absolute.inset-0.bg-gray-200.bg-opacity-50
         img(:src="image" @click=";(popup = true); fullscreenImage = image")

@@ -2,7 +2,7 @@
   div.p-4.rounded-xl.flex.justify-between.items-center.animate
     img.w-14(:src="icon")
     div.text-right
-      div.font-bold {{ label }}
+      div.font-bold.break-all {{ label }}
       h2 {{ value || '' }}
 
 </template>
