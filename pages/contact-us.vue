@@ -1,9 +1,12 @@
 <template lang="pug">
   div.container.mx-auto
     div.mt-20.grid.gap-4.grid-cols-2
-      img.h-full.object-cover(src="/images/contact.jpg")
+      img.h-full.object-cover(
+        class="col-span-2 md:col-span-1"
+        src="/images/contact.jpg"
+      )
 
-      form.bg-white.border.rounded-lg.px-8.pt-6.pb-8
+      form.bg-white.border.rounded-lg.px-8.pt-6.pb-8(class="col-span-2 md:col-span-1")
         div.mb-4
           label.block.text-gray-700.text-sm.font-bold.mb-2 Name
           input.shadow.appearance-none.border.rounded.w-full.py-2.px-3.text-gray-700.leading-tight(
@@ -38,9 +41,9 @@
             class="hover:bg-blue-700 focus:outline-none focus:shadow-outline"
           ) Submit
 
-    div.mt-20.px-20
+    div.mt-20(class="px-10 md:px-20")
       h2.text-center Need help urgently?
-      div.mt-10.grid.grid-cols-4.gap-10
+      div.mt-10.grid.gap-10(class="grid-cols-1 md:grid-cols-4")
         a.py-5.flex.justify-center.items-center.border.rounded-xl.cursor-pointer.transition.duration-200.ease-in(
           class="hover:bg-gray-50 hover:shadow-md"
           href="tel:02122251127"
@@ -77,11 +80,11 @@
 
     //- div#mapbox.mt-20.px-20
 
-    div.mt-20.mb-10.px-20
+    div.mt-20.mb-10(class="px-10 md:px-20")
       h2.text-center Locations
       p.mt-2.mb-5.text-center We have comprehensive offices and branches to provide the best service for our clients.
 
-      div.grid.grid-cols-2.gap-10
+      div.grid.gap-10(class="grid-cols-1 md:grid-cols-2")
         LocationCard(
           v-for="(location, locationIndex) in locations"
           :key="locationIndex"
