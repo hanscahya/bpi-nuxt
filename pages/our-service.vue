@@ -1,23 +1,24 @@
 <template lang="pug">
   div.container.mx-auto.py-20.flex.items-center.relative.overflow-hidden
-    div.grid.grid-cols-2
+    div.grid(class="grid-cols-1 md:grid-cols-2")
       div.px-10.flex.flex-col.justify-center
         div.text-sm.font-black.text-blue-400 Our Services
         div.mt-3.text-3xl.font-black Making your world work better
         div.mt-5.leading-loose Smart, integrated facility services can help your organisation grow profitability, boost efficiency and gain a competitive edge - all while freeing you to focus on your core business. We adapt to your needs and ongoing transformation. Whichever industry, whichever place, we're there to enhance your success.
       div.px-10.flex.flex-wrap.justify-center.items-center
         div(v-for="(item, itemIndex) in content.items" :key="itemIndex" class="w-4/12")
-          div.m-1.h-40.flex.flex-col.justify-center.items-center.text-white.transition-all.duration-400.cursor-pointer(
+          div.m-1.flex.flex-col.justify-center.items-center.text-white.transition-all.duration-400.cursor-pointer(
             :class="['hover:rounded-lg', !item.disabled && 'hover:bg-green-500', 'hover:shadow-xl', item.active ? 'bg-green-300' : item.bgColor]"
+            class="h-28 md:h-40"
             @click="selectedItem(itemIndex, item.active)"
           )
             img(v-if="!item.disabled" :src="item.icon")
-            div.mt-2.font-black(v-else) {{ item.title }}
+            div.mt-2.font-black.text-center(v-else) {{ item.title }}
 
     div.absolute.inset.h-full.transition-all.duration-500(
       v-for="(item, itemIndex) in content.items"
       :key="itemIndex"
-      class="w-2/4"
+      class="w-4/4 md:w-2/4 overflow-y-scroll"
       :class="`${item.bgColor} ${item.active ? 'item-transform-x-0' : 'item-transform-x-100'}`"
     )
       img.mb-4.w-full.object-cover(
@@ -29,6 +30,7 @@
         div.text-lg.font-bold {{ item.title }}
         div.mt-5(v-html="item.html")
         Gallery.my-6(:images="item.galleryImages")
+        button.rounded-full(@click="item.active = false") Close
 
 </template>
 
@@ -186,7 +188,8 @@ export default {
         item.active = false
       }
 
-      this.content.items[index].active = !bool
+      if (!('disabled' in this.content.items[index]))
+        this.content.items[index].active = !bool
     },
   },
 }
