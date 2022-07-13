@@ -8,11 +8,8 @@
       //- filter
       div(v-if="!_.isEmpty(content.body)")
         div.my-3.text-center.text-2xl.font-bold {{ content.body.title }}
-        div.mt-8.grid.grid-cols-4(
-          md:grid-cols-6
-          xl:grid-cols-8
-        )
-          div.px-3.col-start-2(cols="12" md="6" lg="4")
+        div.mt-8.grid(class="grid-cols-2 md:grid-cols-4")
+          div.px-3(class="md:col-start-2")
             label.block.text-gray-700.text-sm.font-bold.mb-2 Position
             b-form-input.shadow.appearance-none.border.rounded.w-full.py-2.px-3.text-gray-700.leading-tight(
               v-model="search.position"
@@ -21,7 +18,7 @@
               placeholder="E.g. Senior Engineer"
               autocomplete="off"
             )
-          div.px-3(cols="12" md="6" lg="4")
+          div.px-3
             label.block.text-gray-700.text-sm.font-bold.mb-2 Department
             b-form-select.shadow.appearance-none.border.rounded.w-full.py-2.px-3.text-gray-700.leading-tight(
               v-model="search.department"
@@ -32,16 +29,12 @@
 
       //- jobs
       div.section-3.grid.grid-cols-6(v-if="!_.isEmpty(content.body.jobs)")
-        div.col-span-4.col-start-2
+        div(class="col-span-6 md:col-span-4 md:col-start-2")
           div.p-5.text-center(v-if="content.body.jobs.length === 0") No job found...
-          div.grid.grid-cols-6(v-else)
-            div.p-3.col-span-3(
+          div.grid(v-else class="grid-cols-1 md:grid-cols-2")
+            div.p-3(
               v-for="(job, jobIndex) in filteredJobs"
               :key="jobIndex"
-
-              cols="12"
-              md="6"
-              lg="5"
             )
               div.item-wrapper
                 div.mb-3
@@ -60,10 +53,6 @@
           b-row
             b-col.d-flex.align-items-center
               h5(v-html="popup_content.title")
-            //- b-col.text-right
-              b-button.apply-now-btn(@click="windowOpen(popup_content.link, '_self')") APPLY NOW
-              div Send your application here:
-              a(href="mailto:hc.recruitment@aladinbank.id") hc.recruitment@aladinbank.id
 
           b-row.mt-3
             b-col(cols="6" md="4" lg="3")
@@ -126,28 +115,6 @@ export default {
       // custom popup
       popup: false,
       popup_content: {},
-    }
-  },
-
-  head() {
-    return {
-      title: this.content ? this.content.page_title : '',
-      titleTemplate: this.content ? 'Aladin Bank | %s' : 'Aladin Bank',
-      meta: [
-        {
-          name: 'title',
-          content: 'Aladin Bank - Sharia banking with peace of mind',
-        },
-        {
-          name: 'text',
-          content: 'The Future of Sharia Finance in your grasp.',
-        },
-        {
-          name: 'description',
-          content:
-            'Aladin is a new phase of Islamic finance solutions for all modern Indonesian society. From daily-use to long term investment, Aladin will accompany your passionate life anytime, anywhere!',
-        },
-      ],
     }
   },
 
