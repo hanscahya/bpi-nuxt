@@ -31,7 +31,11 @@ export default {
         effect: 'slide',
         speed: 2000,
         slideClass: 'swiper-slide',
-        autoplay: false,
+        autoplay: {
+          delay: 0,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false,
+        },
       },
     }
   },
