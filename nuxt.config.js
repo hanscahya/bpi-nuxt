@@ -39,6 +39,7 @@ export default {
     { src: '~/plugins/vue-awesome-swiper.js', ssr: false },
     { src: '~/plugins/lodash.js' },
     { src: './plugins/vue-debounce.js' },
+    { src: './plugins/vue-youtube-embed.js', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

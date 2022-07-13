@@ -3,7 +3,7 @@
     div.m-5.flex.flex-col.justify-between.card(
       v-for="(item, itemIndex) in items"
       :key="itemIndex"
-      class="w-3/12"
+      class="w-12/12 md:w-3/12"
       @click="$router.push(`/profile/${item.id}`)"
     )
       div

@@ -1,29 +1,24 @@
 <template lang="pug">
   div.flex.flex-col
     div.mt-10.grid.grid-cols-2
-      img.object-cover(src="/images/about-us.jpg")
-      //- video
-      //-   source(src="")
-      //- video(
-      //-   ref="vid"
-      //-   playsinline
-      //-   autoplay
-      //-   loop
-      //-   controls
-      //-   preload="none"
-      //-   src="https://www.youtube.com/watch?v=xkWRN5-El5c"
-      //- )
-      //- client-only
-        youtube(video-id="xkWRN5-El5c")
-      div.p-5.flex.flex-col.justify-center.items-start
+      client-only
+        youtube(
+          video-id="xkWRN5-El5c"
+          :player-vars="{ autoplay: 1 }"
+          :player-width="documentWidth < 768 ? documentWidth : (documentWidth/2)"
+          class="col-span-2 md:col-span-1"
+        )
+      div.p-5.flex.flex-col.justify-center(
+        class="col-span-2 md:col-span-1 items-center md:items-start text-center md:text-left"
+      )
         div.text-3xl.font-black Tentang BPI
         div.mt-3.text-lg(class="w-10/12") Pengalaman dalam bidang standar kebersihan hotel membuat BPU menjadi perusahaan terbaik
 
-    div.mx-auto.my-10.p-5.text-center(class="w-10/12")
+    div.mx-auto.my-10.text-center(class="w-10/12")
       div.text-sm.font-black.text-blue-400 PT. Bangunpapan Idaman (BPI)
       div.mt-5.leading-loose Perusahaan yg bergerak dalam bidang spesialist penyedia jasa kebersihan (cleaning service) di indonesia. Yg mana saat ini memiliki jumlah pekerja lebih dari 3000 pekerja. Berdasarkan dengan akta pendirian perusahaan, PT. Bangunpapan Idaman (BPI) resmi didirikan pada tanggal 04 Agustus 2006. BPI sudah memiliki pengalaman lebih dari satu dekade menjadi partner setia klien-klien kami baik dari Apartemen, Perkantoran, RS, Pabrik, universitas, sekolah, pusat perbelanjaan dll, sejak pertama kali didirikan Di tahun 2006, selama 14 tahun beroperasi, BPI telah menjadi salah satu perusahaan penyedia layanan fasilitas yg profesional & mengutamakan kepuasan klien klien kami serta didukung dengan Sumber daya manusia yg dapat diandalkan & berlandaskan kejujuran & profesionalitas.
 
-    div.py-10.container.self-center(class="sm:px-10 md:px-20 lg:px-40")
+    div.py-10.container.self-center(class="px-0 md:px-20 lg:px-40")
       TwoColumnsContent(
         v-for="(item, itemIndex) in content.section2.items"
         :key="itemIndex"
@@ -34,7 +29,8 @@
         :image="item.image"
       )
 
-    LargeProfile.px-20.py-10(
+    LargeProfile.py-10(
+      class="px-10 md:px-20 lg:px-40"
       :label="content.section3.highlight.label"
       :title="content.section3.highlight.title"
       :paragraph="content.section3.highlight.paragraph"
@@ -86,6 +82,8 @@ export default {
 
   data() {
     return {
+      documentWidth: null,
+
       content: {
         section1: {
           title: 'Tentang Kami',
@@ -137,8 +135,9 @@ export default {
 
   mounted() {
     const response = profile
-    console.log(response)
     this.content.section3.items = response
+
+    this.documentWidth = document.body.clientWidth
 
     setTimeout(() => {
       this.$store.commit('setLoading', false)
