@@ -12,7 +12,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'bpi-nuxt',
+    title: 'PT. Bangunpapan Idaman',
     htmlAttrs: {
       lang: 'en',
     },
