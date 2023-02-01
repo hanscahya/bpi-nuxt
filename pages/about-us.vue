@@ -49,11 +49,11 @@
       :items="content.section3.items.filter((item) => item.group === 'manager')"
     )
 
-    div.mx-auto.my-10.p-5.text-center
-      div.text-sm.font-black.text-blue-400 Dokter Perusahaan
-    ThumbnailProfile.mb-10(
-      :items="content.section3.items.filter((item) => item.group === 'dokter-perusahaan')"
-    )
+    //- div.mx-auto.my-10.p-5.text-center
+    //-   div.text-sm.font-black.text-blue-400 Dokter Perusahaan
+    //- ThumbnailProfile.mb-10(
+    //-   :items="content.section3.items.filter((item) => item.group === 'dokter-perusahaan')"
+    //- )
 
 </template>
 
