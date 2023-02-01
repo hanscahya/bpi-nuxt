@@ -34,8 +34,8 @@
           img.cursor-pointer(
             src="/images/logo.png"
             srcset="/images/logo@2x.png 2x, /images/logo.png 1x"
-            alt="Logo Aladin Bank"
-            title="aladin-bank-logo"
+            alt="Logo BPI Oke"
+            title="bpi-oke-logo"
             @click="$router.push('/')"
           )
           b-icon.text-2xl.cursor-pointer(icon="x" @click="isMenuActive = false")
