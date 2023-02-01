@@ -9,7 +9,7 @@
       div
         div.text-xl.font-black {{ item.name }}
         div.mt-3.text-sm {{ item.label }}
-      img.mt-5(:src="item.image")
+      img.mt-5.rounded-xl(:src="item.image")
 
 </template>
 

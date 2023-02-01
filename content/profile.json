@@ -1,83 +1,92 @@
 [
   {
-    "id": 1,
+    "id": "h-purnomo-hadisaputro",
+    "name": "H. Purnomo Hadisaputro",
+    "label": "Founder & CEO",
+    "image": "/images/profile/h-purnomo-hadisaputro.jpg",
+    "html1": "Dengan mengucapkan puji syukur kepada Tuhan yang Maha Esa serta dengan hormat kami haturkan terima kasih, kepada para relasi serta klien kami yang telah percaya menggunakan Jasa PT. Bangunpapan Idaman (BPI) sejak tahun 2006 hingga saat ini berdiri dengan kokoh.<br /> <br />Dalam satu dekade PT. Bangun Idaman (BPI) telah tumbuh menjadi perusahaan spesialist penyedia jasa kebersihan dan keamanan atau human capital resources provider yang telah memiliki banyak pengalaman di berbagai sektor industri di Indonesia.",
+    "html2": "<div class=\"mb-3\">Semua aktivitas bisniskami didorong untuk menegakkan praktik-praktik tata kelola terupdate guna memberikan hasil terbaik dan akuntable serta kami akan terus berinovasi mengikuti perkembangan teknologi untuk tetap dapat di implementasikan dengan baik dan dengan daya manusia yang profesional, produktivitas tinggi dan berintegritas.</div><div class=\"mb-3\">Berdasarkan dengan hal ini menjadikan PT. Bangunpapan Idaman (BPI) unggul dalam menangani kebersihan dan keaman disertai komitmen untuk memberikan pelayanan dengan kualitas terbaik sehingga kami dapat memberikan solusi mengenai kebersihan dan keamanan secara profesional.</div>",
+    "related": [ "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah", "keistiyana-susilowati" ],
+    "group": "founder"
+  },
+  {
+    "id": "m-fatah-andriansyah",
     "name": "M.Fatah Andriansyah  S.Ikom",
     "label": "Vice President Director",
-    "image": "https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/637391772578405884.png",
-    "html1": "<div>Vikram Sinha was appointed as Director & Chief Operating Officer at Indosat Ooredoo Annual General Shareholders Meeting (AMGS) held on 2 May 2019</div><h6>Experience</h6><ul><li>Has worked with companies like Coca Cola, Star-TV and Airtel during his 20 years professional carrier.</li><li>Chief Operating Officer Airtel Congo Brazzaville</li><li>CEO Ooredoo Maldives (2014)</li><li>CEO Ooredoo Myanmar (2017)</li><li>Director & Chief Operating Officer Indosat Ooredoo (2019)</li></ul><h6>Education</h6><ul><li>Master degree in business management</li><li>Completed Leadership Development program from IMD-Lausanne</li><li>Completed Future Business Leaders program in ISB</li><li>Participated in the Leadership Development Program at IIM-A</li></ul>",
-    "html2": "Nisi esse officia tempor anim ipsum mollit incididunt commodo deserunt sint non. Laboris proident culpa eu ea ex cillum labore id mollit incididunt proident sunt laboris et. Mollit eiusmod commodo sunt eiusmod sunt.",
-    "related": [ 1, 2, 3, 4 ]
+    "image": "/images/profile/m-fatah-andriansyah.jpg",
+    "html1": "-",
+    "html2": "-",
+    "related": [ "h-purnomo-hadisaputro", "hj-kartini-arjo", "heru-ardiansyah", "keistiyana-susilowati" ],
+    "group": "jajaran-pimpinan"
   },
   {
-    "id": 2,
+    "id": "hj-kartini-arjo",
     "name": "Hj. Kartini Arjo",
     "label": "Director & Chief Financial Officer",
-    "image": "https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/637391772578405884.png",
-    "html1": "<div>Vikram Sinha was appointed as Director & Chief Operating Officer at Indosat Ooredoo Annual General Shareholders Meeting (AMGS) held on 2 May 2019</div><h6>Experience</h6><ul><li>Has worked with companies like Coca Cola, Star-TV and Airtel during his 20 years professional carrier.</li><li>Chief Operating Officer Airtel Congo Brazzaville</li><li>CEO Ooredoo Maldives (2014)</li><li>CEO Ooredoo Myanmar (2017)</li><li>Director & Chief Operating Officer Indosat Ooredoo (2019)</li></ul><h6>Education</h6><ul><li>Master degree in business management</li><li>Completed Leadership Development program from IMD-Lausanne</li><li>Completed Future Business Leaders program in ISB</li><li>Participated in the Leadership Development Program at IIM-A</li></ul>",
-    "html2": "Nisi esse officia tempor anim ipsum mollit incididunt commodo deserunt sint non. Laboris proident culpa eu ea ex cillum labore id mollit incididunt proident sunt laboris et. Mollit eiusmod commodo sunt eiusmod sunt.",
-    "related": [ 2, 3, 4, 5 ]
+    "image": "/images/profile/hj-kartini-arjo.jpg",
+    "html1": "-",
+    "html2": "-",
+    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "heru-ardiansyah", "keistiyana-susilowati" ],
+    "group": "jajaran-pimpinan"
   },
   {
-    "id": 3,
-    "name": "Heru Ardiansyah S.Kom, M.kom",
-    "label": "Director & Chief Operating Officer",
-    "image": "https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/637391772578405884.png",
-    "html1": "<div>Vikram Sinha was appointed as Director & Chief Operating Officer at Indosat Ooredoo Annual General Shareholders Meeting (AMGS) held on 2 May 2019</div><h6>Experience</h6><ul><li>Has worked with companies like Coca Cola, Star-TV and Airtel during his 20 years professional carrier.</li><li>Chief Operating Officer Airtel Congo Brazzaville</li><li>CEO Ooredoo Maldives (2014)</li><li>CEO Ooredoo Myanmar (2017)</li><li>Director & Chief Operating Officer Indosat Ooredoo (2019)</li></ul><h6>Education</h6><ul><li>Master degree in business management</li><li>Completed Leadership Development program from IMD-Lausanne</li><li>Completed Future Business Leaders program in ISB</li><li>Participated in the Leadership Development Program at IIM-A</li></ul>",
-    "html2": "Nisi esse officia tempor anim ipsum mollit incididunt commodo deserunt sint non. Laboris proident culpa eu ea ex cillum labore id mollit incididunt proident sunt laboris et. Mollit eiusmod commodo sunt eiusmod sunt.",
-    "related": [ 1, 2, 3, 4 ]
+    "id": "heru-ardiansyah",
+    "name": "Heru Ardiansyah",
+    "label": "Chief Operating Officer",
+    "image": "/images/profile/heru-ardiansyah.jpg",
+    "html1": "<div class=\"mb-3\">Sejak awal Bapak Heru Ardiansyah memiliki passion dalam berkomunikasi dengan customer, di awal karirnya beliau memulai karir dengan menjadi Sales Supervisor di Perusahaan Alat Berat. Tidak hanya bekerja, beliau memanfaatkan waktu tersebut untuk mengambil ilmu di lapangan.</div><div class=\"mb-3\">Berkat tekad dan ketekunannya dalam bekerja, beliau diangkat menjadi Senior Sales Supervisor di Perusahaan tersebut. Hal tersebut memberikannya tanggung jawab dan tugas lebih berat. Namun hal tersebut justru membuatnya terus bekerja lebih keras dan bekerja semaksimal mungkin hingga akhirnya beliau diangkat menjadi Kepala Cabang di Perusahaan tersebut.</div>",
+    "html2": "<div class=\"mb-3\">Ketekunan dan keinginannya untuk belajar juga membuatnya melanjutkan pendidikan ke jenjang S2. Bekerja sambil kuliah merupakan sebuah tantangan bagi semua orang, tak terkecuali untuk Bapak Heru Ardiansyah. Namun beliau berhasil menyelesaikannya dengan baik.</div><div class=\"mb-3\">Kegigihan, usaha, serta kerja keras beliau berhasil membuatnya menempati posisi saat ini yaitu sebagai Chief Operating Officer di PT Bangunpapan Indah. Saat ini beliau menaungi 6 divisi di bawahnya, yaitu Divisi Finance, Accounting, HRGA, Sales, IT, dan Legal.</div><div class=\"mb-3\">Besarnya tanggung jawab yang dimiliki beliau membuatnya terpacu untuk bekerja lebih keras dan lebih gigih. Beliau sadar bahwa roda perusahaan membutuhkan kontribusi yang bukan sekedarnya. Berbekal 7 tahun pengalaman yang dimilikinya, PT Bangunpapan Indah optimis untuk melaju lebih jauh lagi.</div>",
+    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "keistiyana-susilowati" ],
+    "group": "jajaran-pimpinan"
   },
   {
-    "id": 4,
-    "name": "Kristiyana Susilowati",
-    "label": "Finance Manager",
-    "image": "https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/637391772578405884.png",
-    "html1": "<div>Vikram Sinha was appointed as Director & Chief Operating Officer at Indosat Ooredoo Annual General Shareholders Meeting (AMGS) held on 2 May 2019</div><h6>Experience</h6><ul><li>Has worked with companies like Coca Cola, Star-TV and Airtel during his 20 years professional carrier.</li><li>Chief Operating Officer Airtel Congo Brazzaville</li><li>CEO Ooredoo Maldives (2014)</li><li>CEO Ooredoo Myanmar (2017)</li><li>Director & Chief Operating Officer Indosat Ooredoo (2019)</li></ul><h6>Education</h6><ul><li>Master degree in business management</li><li>Completed Leadership Development program from IMD-Lausanne</li><li>Completed Future Business Leaders program in ISB</li><li>Participated in the Leadership Development Program at IIM-A</li></ul>",
-    "html2": "Nisi esse officia tempor anim ipsum mollit incididunt commodo deserunt sint non. Laboris proident culpa eu ea ex cillum labore id mollit incididunt proident sunt laboris et. Mollit eiusmod commodo sunt eiusmod sunt.",
-    "related": [ 2, 3, 4, 5 ]
+    "id": "keistiyana-susilowati",
+    "name": "Keistiyana Susilowati",
+    "label": "Finance and Accounting Manager",
+    "image": "/images/profile/keistiyana-susilowati.jpg",
+    "html1": "<div class=\"mb-3\">Meniti awal karir sebagai Staf Administrasi, Ibu Keistiyana Susilowati tekun belajar dan mencari tahu lebih dalam terkait dunia administrasi. Ia selalu mencoba menemukan dan belajar hal baru untuk diaplikasikan dalam pekerjaannya.</div><div class=\"mb-3\">Beliau menjabat sebagai Staf Administrasi selama 3 tahun, hal tersebut memberikannya pengalaman yang cukup mumpuni dalam penerapan ilmu administratif. Keinginan untuk berkembang terus dirasakan oleh beliau, beliau mulai mencoba hal yang lebih menantang.</div><div class=\"mb-3\">Keinginan mencoba hal baru dilakukan oleh beliau dengan menjadi Staf Finance & Accounting di PT Bangunpapan Indah. Beliau merupakan sosok yang bekerja penuh dengan ketekunan dan kerja keras. Selain itu beliau juga memiliki pribadi yang pantang menyerah.</div>",
+    "html2": "<div class=\"mb-3\">Beliau akhirnya berhasil menjabat posisi FA Manager di PT. Bangunpapan Indah, berkat hasil kerja keras dan ketekunannya. Sampai dengan saat ini, beliau telah menjabat sebagai FA Manager selama kurang lebih 3 tahun lamanya.</div><div class=\"mb-3\">Aktivitas beliau sebagai FA Manager yaitu terjun langsung menangani Finance Administrative dan juga menangani bidang purchasing. Beliau juga membawahi dua divisi sekaligus yaitu Divisi Finance Administration dan Purchasing.</div><div class=\"mb-3\">Sampai dengan saat ini, beliau telah berkecimpung di bidang jasa selama kurang lebih 9 tahun lamanya. Beliau ingin mengabdikan ilmu dan pengetahuannya di bidang jasa khususnya di PT. Bangunpapan Indah, berkontribusi selalu, untuk membawa PT. Bangunpapan Indah terbang lebih tinggi.</div>",
+    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah" ],
+    "group": "manager"
   },
   {
-    "id": 5,
-    "name": "Rossi Pradini",
-    "label": "HR&GA Manager",
-    "image": "https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/637391772578405884.png",
-    "html1": "<div>Vikram Sinha was appointed as Director & Chief Operating Officer at Indosat Ooredoo Annual General Shareholders Meeting (AMGS) held on 2 May 2019</div><h6>Experience</h6><ul><li>Has worked with companies like Coca Cola, Star-TV and Airtel during his 20 years professional carrier.</li><li>Chief Operating Officer Airtel Congo Brazzaville</li><li>CEO Ooredoo Maldives (2014)</li><li>CEO Ooredoo Myanmar (2017)</li><li>Director & Chief Operating Officer Indosat Ooredoo (2019)</li></ul><h6>Education</h6><ul><li>Master degree in business management</li><li>Completed Leadership Development program from IMD-Lausanne</li><li>Completed Future Business Leaders program in ISB</li><li>Participated in the Leadership Development Program at IIM-A</li></ul>",
-    "html2": "Nisi esse officia tempor anim ipsum mollit incididunt commodo deserunt sint non. Laboris proident culpa eu ea ex cillum labore id mollit incididunt proident sunt laboris et. Mollit eiusmod commodo sunt eiusmod sunt.",
-    "related": [ 1, 2, 3, 4 ]
+    "id": "rosi-pradini-amd",
+    "name": "Rosi Pradini, Amd",
+    "label": "HR & GA Manager",
+    "image": "/images/profile/rosi-pradini-amd.jpg",
+    "html1": "<div class=\"mb-3\">Mengenyam pendidikan di Universitas Trisakti, dengan jurusan Akuntansi Perpajakan membuatnya tertarik untuk meniti karir di bidang perpajakan. Setelah menyelesaikan kuliah, Ibu Rosi Pradini mulai melamar kerja sebagai Junior Tax Staff.</div><div class=\"mb-3\">Bekerja sebagai Junior Tax Staff kurang lebih selama 2 tahun di PT Atri Distribusindo memberikan pengalaman dan ilmu yang cukup berharga bagi beliau. Tidak sampai di situ, beliau ingin mencoba memiliki karir yang lebih baik.</div><div class=\"mb-3\">Pada tahun 2012 akhirnya beliau melamar ke PT Bangunpapan Indah. Dengan ilmu yang dimilikinya, beliau mencoba memberikan yang terbaik untuk PT Bangunpapan Indah dengan usaha, kerja keras, serta ketekunan. Beliau menjabat sebagai Tax Staff di PT Bangunpapan Indah selama kurang lebih 4 tahun lamanya.</div>",
+    "html2": "<div class=\"mb-3\">Berkat kerja kerasnya, beliau kini menjabat sebagai HR & GA Manager di PT  Bangunpapan Indah. Beliau memiliki tanggung jawab untuk melakukan perhitungan dan pembayaran gaji karyawan, absensi dan cuti karyawan, kontrak kerja, dan bertanggung  jawab terhadap database karyawan, dan lainnya.</div><div class=\"mb-3\">Sampai dengan saat ini, beliau telah berkecimpung di dunia jasa selama 8 tahun, dimana 4 tahun tersebut beliau menjabat sebagai HR & GA Manager di PT Bangunpapan Indah. Baginya memberikan yang terbaik bagi perusahaan dimana ia bekerja merupakan suatu kebanggaan.</div><div class=\"mb-3\">Dengan kontribusi yang ia berikan, beliau berharap PT Bangunpapan Indah dapat terus berkembang dan mensejahterakan staf nya sehingga dapat menjadi tempat kerja yang nyaman bagi seluruh SDM-nya.</div>",
+    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah" ],
+    "group": "manager"
   },
   {
-    "id": 6,
+    "id": "asep-setiawan",
     "name": "Asep Setiawan",
-    "label": "Operating Manager",
-    "image": "https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/637391772578405884.png",
-    "html1": "<div>Vikram Sinha was appointed as Director & Chief Operating Officer at Indosat Ooredoo Annual General Shareholders Meeting (AMGS) held on 2 May 2019</div><h6>Experience</h6><ul><li>Has worked with companies like Coca Cola, Star-TV and Airtel during his 20 years professional carrier.</li><li>Chief Operating Officer Airtel Congo Brazzaville</li><li>CEO Ooredoo Maldives (2014)</li><li>CEO Ooredoo Myanmar (2017)</li><li>Director & Chief Operating Officer Indosat Ooredoo (2019)</li></ul><h6>Education</h6><ul><li>Master degree in business management</li><li>Completed Leadership Development program from IMD-Lausanne</li><li>Completed Future Business Leaders program in ISB</li><li>Participated in the Leadership Development Program at IIM-A</li></ul>",
-    "html2": "Nisi esse officia tempor anim ipsum mollit incididunt commodo deserunt sint non. Laboris proident culpa eu ea ex cillum labore id mollit incididunt proident sunt laboris et. Mollit eiusmod commodo sunt eiusmod sunt.",
-    "related": [ 2, 3, 4, 5 ]
+    "label": "Operasional Manager",
+    "image": "/images/profile/asep-setiawan.jpg",
+    "html1": "<div class=\"mb-3\">Memulai karir di tahun 2002 sebagai cleaning service. Pengalaman di Perusahaan sebelumnya selama kurang lebih 5 tahun memberikannya kontribusi besar pada karir  beliau.</div><div class=\"mb-3\">Sampai dengan saat ini Bapak Asep Setiawan telah berkontribusi di bidang jasa selama 20 tahun. Bukan waktu yang sebentar untuk perjalanan karir. Namun semangat yang dimiliki Bapak Asep tidak pernah pudar dalam memberikan yang terbaik.</div>",
+    "html2": "<div class=\"mb-3\">Bapak Asep memiliki pengalaman sebagai Cleaning Service, Team Leader, Supervisor, Chief Supervisor, Area Manager, hingga akhirnya kini menempati jabatan sebagai Operational Manager di PT. Bangunpapan Idaman.</div><div class=\"mb-3\">Dengan pengalaman selama kurang lebih 20 tahun, Bapak Asep telah menjalankan posisinya sebagai Operasional Manager kurang lebih 16 tahun lamanya. Saat ini, beliau  membawahi 25 project dan 782 manpower. Kontribusi beliau merupakan hal yang  siginifikan untuk perkembangan PT Bangunpapan Idaman saat ini dan seterusnya.</div>",
+    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah" ],
+    "group": "manager"
   },
   {
-    "id": 7,
+    "id": "haerudin",
     "name": "Haerudin",
-    "label": "Operating Manager",
-    "image": "https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/637391772578405884.png",
-    "html1": "<div>Vikram Sinha was appointed as Director & Chief Operating Officer at Indosat Ooredoo Annual General Shareholders Meeting (AMGS) held on 2 May 2019</div><h6>Experience</h6><ul><li>Has worked with companies like Coca Cola, Star-TV and Airtel during his 20 years professional carrier.</li><li>Chief Operating Officer Airtel Congo Brazzaville</li><li>CEO Ooredoo Maldives (2014)</li><li>CEO Ooredoo Myanmar (2017)</li><li>Director & Chief Operating Officer Indosat Ooredoo (2019)</li></ul><h6>Education</h6><ul><li>Master degree in business management</li><li>Completed Leadership Development program from IMD-Lausanne</li><li>Completed Future Business Leaders program in ISB</li><li>Participated in the Leadership Development Program at IIM-A</li></ul>",
-    "html2": "Nisi esse officia tempor anim ipsum mollit incididunt commodo deserunt sint non. Laboris proident culpa eu ea ex cillum labore id mollit incididunt proident sunt laboris et. Mollit eiusmod commodo sunt eiusmod sunt.",
-    "related": [ 1, 2, 3, 4 ]
+    "label": "Operasional Manager",
+    "image": "/images/profile/haerudin.jpg",
+    "html1": "<div class=\"mb-3\">Memulai karir sebagai seorang cleaning service, Bapak Haerudin selalu yakin bahwa hasil tidak akan mengkhianati usaha. Berkarir sejak tahun 1994 membuat beliau memiliki pengaman yang cukup banyak terkait jasa cleaning service.</div><div class=\"mb-3\">Mengenyam pendidikan sampai dengan tingkat SMA, beliau memutuskan untuk melamar menjadi seorang cleaning service. Segala pekerjaan dilakukannya dengan penuh semangat dan senang hati.</div>",
+    "html2": "<div class=\"mb-3\">Beliau memiliki tanggung jawab untuk memberikan briefing kepada tim di pagi hari, membuat laporan pekerjaan dan melakukan koordinasi dengan manajemen terkait kendala di lapangan.</div><div class=\"mb-3\">Semangat pantang menyerah, kerja keras, serta ketekunan yang dimiliki oleh beliau membuatnya bertahan di bidang jasa selama 28 tahun. Tidak sebentar untuk sebuah perjalanan karir dimana akhirnya beliau dapat menempati posisinya saat ini yaitu sebagai Operasional Manager di PT Bangunpapan Indah.</div><div class=\"mb-3\">Hingga saat ini, beliau telah membawahi 397 orang di PT Bangunpapan Indah. Dengan semangat dan ketekunan beliau, PT Bangunpapan Indah berharap dapat terus berkembang dan melangkah lebih jauh.</div>",
+    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah" ],
+    "group": "manager"
   },
   {
-    "id": 8,
-    "name": "Jumikan",
-    "label": "Operating Manager",
-    "image": "https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/637391772578405884.png",
-    "html1": "<div>Vikram Sinha was appointed as Director & Chief Operating Officer at Indosat Ooredoo Annual General Shareholders Meeting (AMGS) held on 2 May 2019</div><h6>Experience</h6><ul><li>Has worked with companies like Coca Cola, Star-TV and Airtel during his 20 years professional carrier.</li><li>Chief Operating Officer Airtel Congo Brazzaville</li><li>CEO Ooredoo Maldives (2014)</li><li>CEO Ooredoo Myanmar (2017)</li><li>Director & Chief Operating Officer Indosat Ooredoo (2019)</li></ul><h6>Education</h6><ul><li>Master degree in business management</li><li>Completed Leadership Development program from IMD-Lausanne</li><li>Completed Future Business Leaders program in ISB</li><li>Participated in the Leadership Development Program at IIM-A</li></ul>",
-    "html2": "Nisi esse officia tempor anim ipsum mollit incididunt commodo deserunt sint non. Laboris proident culpa eu ea ex cillum labore id mollit incididunt proident sunt laboris et. Mollit eiusmod commodo sunt eiusmod sunt.",
-    "related": [ 2, 3, 4, 5 ]
-  },
-  {
-    "id": 9,
-    "name": "dr.nike pebrica purnamasari",
+    "id": "dr-nike-pebrica-purnamasari",
+    "name": "dr. Nike Pebrica Purnamasari",
     "label": "Dokter Perusahaan",
-    "image": "https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/637391772578405884.png",
-    "html1": "<div>Vikram Sinha was appointed as Director & Chief Operating Officer at Indosat Ooredoo Annual General Shareholders Meeting (AMGS) held on 2 May 2019</div><h6>Experience</h6><ul><li>Has worked with companies like Coca Cola, Star-TV and Airtel during his 20 years professional carrier.</li><li>Chief Operating Officer Airtel Congo Brazzaville</li><li>CEO Ooredoo Maldives (2014)</li><li>CEO Ooredoo Myanmar (2017)</li><li>Director & Chief Operating Officer Indosat Ooredoo (2019)</li></ul><h6>Education</h6><ul><li>Master degree in business management</li><li>Completed Leadership Development program from IMD-Lausanne</li><li>Completed Future Business Leaders program in ISB</li><li>Participated in the Leadership Development Program at IIM-A</li></ul>",
-    "html2": "Nisi esse officia tempor anim ipsum mollit incididunt commodo deserunt sint non. Laboris proident culpa eu ea ex cillum labore id mollit incididunt proident sunt laboris et. Mollit eiusmod commodo sunt eiusmod sunt.",
-    "related": [ 1, 2, 3, 4 ]
+    "image": "/images/blank-img.png",
+    "html1": "-",
+    "html2": "-",
+    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah" ],
+    "group": "dokter-perusahaan"
   }
 ]

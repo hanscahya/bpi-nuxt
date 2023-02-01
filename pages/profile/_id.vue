@@ -9,6 +9,12 @@
 
       div.col-span-6.col-start-2(v-html="content.html2")
 
+    div.mx-auto.my-10.p-5.text-center
+      div.text-sm.font-black.text-blue-400 Profil Lainnya
+      ThumbnailProfile.mb-10(
+        :items="relatedItems.slice(0, 3)"
+      )
+
 </template>
 
 <script>
@@ -22,6 +28,7 @@ export default {
   data() {
     return {
       content: null,
+      relatedItems: [],
     }
   },
 
@@ -30,8 +37,10 @@ export default {
       return this.$nuxt.error({ statusCode: 404, message: 'Page not Found' })
     else {
       const responseContent = await this.getContent()
-      if (responseContent.length > 0) this.content = responseContent[0]
-      else
+      if (responseContent.length > 0) {
+        this.content = responseContent[0]
+        this.getRelatedProfile()
+      } else
         return this.$nuxt.error({ statusCode: 404, message: 'Page not Found' })
 
       setTimeout(() => {
@@ -42,10 +51,17 @@ export default {
 
   methods: {
     getContent() {
-      const index = parseInt(this.$route.params.id)
+      const index = this.$route.params.id
       const response = profile
 
       return response.filter((c) => c.id === index)
+    },
+    getRelatedProfile() {
+      this.relatedItems = []
+      if (this.content.related)
+        this.content.related.forEach((id) => {
+          this.relatedItems.push(profile.find((p) => p.id === id))
+        })
     },
   },
 }

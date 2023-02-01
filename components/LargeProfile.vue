@@ -8,11 +8,11 @@
       div.text-sm.font-black.text-blue-400 {{ label }}
       h1.mt-3 {{ title }}
       p.mt-5.leading-loose(v-html="paragraph")
-      button(v-if="button1Link") {{ button1Text }}
+      button.mt-3.button-primary.w-60(v-if="button1Link" @click="$router.push(button1Link)") {{ button1Text }}
       button(v-if="button2Link") {{ button2Text }}
 
     div(class="col-span-5 md:col-span-2")
-      img(:src="image")
+      img.rounded-xl(:src="image")
 
 </template>
 
@@ -55,4 +55,14 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.button-primary {
+  @apply bg-primary;
+  @apply border-primary;
+
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  white-space: nowrap;
+}
+</style>

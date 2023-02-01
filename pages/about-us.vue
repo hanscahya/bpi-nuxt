@@ -11,7 +11,7 @@
 
     div.mx-auto.my-10.text-center(class="w-10/12")
       div.text-sm.font-black.text-blue-400 PT. Bangunpapan Idaman (BPI)
-      div.mt-5.leading-loose Perusahaan yg bergerak dalam bidang spesialist penyedia jasa kebersihan (cleaning service) di indonesia. Yg mana saat ini memiliki jumlah pekerja lebih dari 3000 pekerja. Berdasarkan dengan akta pendirian perusahaan, PT. Bangunpapan Idaman (BPI) resmi didirikan pada tanggal 04 Agustus 2006. BPI sudah memiliki pengalaman lebih dari satu dekade menjadi partner setia klien-klien kami baik dari Apartemen, Perkantoran, RS, Pabrik, universitas, sekolah, pusat perbelanjaan dll, sejak pertama kali didirikan Di tahun 2006, selama 14 tahun beroperasi, BPI telah menjadi salah satu perusahaan penyedia layanan fasilitas yg profesional & mengutamakan kepuasan klien klien kami serta didukung dengan Sumber daya manusia yg dapat diandalkan & berlandaskan kejujuran & profesionalitas.
+      div.mt-5.leading-loose Perusahaan yg bergerak dalam bidang spesialist penyedia jasa kebersihan (cleaning service) di Indonesia. Yg mana saat ini memiliki jumlah pekerja lebih dari 3000 pekerja. Berdasarkan dengan akta pendirian perusahaan, PT. Bangunpapan Idaman (BPI) resmi didirikan pada tanggal 04 Agustus 2006. BPI sudah memiliki pengalaman lebih dari satu dekade menjadi partner setia klien-klien kami baik dari Apartemen, Perkantoran, RS, Pabrik, universitas, sekolah, pusat perbelanjaan dll, sejak pertama kali didirikan Di tahun 2006, selama 14 tahun beroperasi, BPI telah menjadi salah satu perusahaan penyedia layanan fasilitas yg profesional & mengutamakan kepuasan klien klien kami serta didukung dengan Sumber daya manusia yg dapat diandalkan & berlandaskan kejujuran & profesionalitas.
 
     div.py-10.container.self-center(class="px-0 md:px-20 lg:px-40")
       TwoColumnsContent(
@@ -29,29 +29,30 @@
       :label="content.section3.highlight.label"
       :title="content.section3.highlight.title"
       :paragraph="content.section3.highlight.paragraph"
-      :button-1-text="content.section3.highlight.button1Link"
-      :button-1-link="content.section3.highlight.button1Text"
-      :button-2-text="content.section3.highlight.button2Link"
-      :button-2-link="content.section3.highlight.button2Text"
+      :button1Link="content.section3.highlight.button1Link"
+      :button1Text="content.section3.highlight.button1Text"
+      :button2Link="content.section3.highlight.button2Link"
+      :button2Text="content.section3.highlight.button2Text"
       :image="content.section3.highlight.image"
+      @click="$router.push(`/profile/${content.section3.highlight.id}`)"
     )
 
     div.mx-auto.my-10.p-5.text-center
       div.text-sm.font-black.text-blue-400 Jajaran Pimpinan
     ThumbnailProfile.mb-10(
-      :items="content.section3.items.slice(0, 3)"
+      :items="content.section3.items.filter((item) => item.group === 'jajaran-pimpinan')"
     )
 
     div.mx-auto.my-10.p-5.text-center
       div.text-sm.font-black.text-blue-400 Manager
     ThumbnailProfile.mb-10(
-      :items="content.section3.items.slice(3, 8)"
+      :items="content.section3.items.filter((item) => item.group === 'manager')"
     )
 
     div.mx-auto.my-10.p-5.text-center
       div.text-sm.font-black.text-blue-400 Dokter Perusahaan
     ThumbnailProfile.mb-10(
-      :items="content.section3.items.slice(8, 9)"
+      :items="content.section3.items.filter((item) => item.group === 'dokter-perusahaan')"
     )
 
 </template>
@@ -83,7 +84,7 @@ export default {
         section1: {
           title: 'Tentang Kami',
           paragraph:
-            'PT. Bangunpapan Idaman (BPI) adalah perusahaan yg bergerak dalam bidang spesialist penyedia jasa kebersihan (cleaning service) di indonesia. Yg mana saat ini memiliki jumlah pekerja lebih dari 3000 pekerja. Berdasarkan dengan akta pendirian perusahaan, PT. Bangunpapan Idaman (BPI) resmi didirikan pada tanggal 04 Agustus 2006. BPI sudah memiliki pengalaman lebih dari satu dekade menjadi partner setia klien-klien kami baik dari Apartemen, Perkantoran, RS, Pabrik, universitas, sekolah, pusat perbelanjaan dll, sejak pertama kali didirikan Di tahun 2006, selama 14 tahun beroperasi, BPI telah menjadi salah satu perusahaan penyedia layanan fasilitas yg profesional & mengutamakan kepuasan klien klien kami serta didukung dengan Sumber daya manusia yg dapat diandalkan & berlandaskan kejujuran & profesionalitas.',
+            'PT. Bangunpapan Idaman (BPI) adalah perusahaan yg bergerak dalam bidang spesialist penyedia jasa kebersihan (cleaning service) di Indonesia. Yg mana saat ini memiliki jumlah pekerja lebih dari 3000 pekerja. Berdasarkan dengan akta pendirian perusahaan, PT. Bangunpapan Idaman (BPI) resmi didirikan pada tanggal 04 Agustus 2006. BPI sudah memiliki pengalaman lebih dari satu dekade menjadi partner setia klien-klien kami baik dari Apartemen, Perkantoran, RS, Pabrik, universitas, sekolah, pusat perbelanjaan dll, sejak pertama kali didirikan Di tahun 2006, selama 14 tahun beroperasi, BPI telah menjadi salah satu perusahaan penyedia layanan fasilitas yg profesional & mengutamakan kepuasan klien klien kami serta didukung dengan Sumber daya manusia yg dapat diandalkan & berlandaskan kejujuran & profesionalitas.',
           image: '/images/logo.png',
           bgImage: '/images/slider/cs.jpg',
           buttonLink: '/',
@@ -111,16 +112,15 @@ export default {
         },
         section3: {
           highlight: {
-            label: 'Presdir & CEO',
+            label: 'Founder & CEO',
             title: 'Sambutan Direktur Utama',
             paragraph:
-              '<b class="text-lg">H.Purnomo Hadisaputro</b><br /> Excepteur ea nostrud occaecat in do quis consequat aliquip sit tempor esse. Duis nisi elit id consectetur ullamco quis voluptate incididunt dolor reprehenderit sunt ad. Sint deserunt nulla et exercitation ipsum consequat non reprehenderit adipisicing non.',
-            button1Link: '/',
+              '<b class="text-lg">H. Purnomo Hadisaputro</b><br /> Dengan mengucapkan puji syukur kepada Tuhan yang Maha Esa serta dengan hormat kami haturkan terima kasih, kepada para relasi serta klien kami yang telah percaya menggunakan Jasa PT. Bangunpapan Idaman (BPI) sejak tahun 2006 hingga saat ini berdiri dengan kokoh.<br /> <br />Dalam satu dekade PT. Bangun Idaman (BPI) telah tumbuh menjadi perusahaan spesialist penyedia jasa kebersihan dan keamanan atau human capital resources provider yang telah memiliki banyak pengalaman di berbagai sektor industri di Indonesia.',
+            button1Link: '/profile/h-purnomo-hadisaputro',
             button1Text: 'Baca Selengkapnya',
-            button2Link: '/',
+            button2Link: '',
             button2Text: 'Lihat Profil Direktur',
-            image:
-              'https://im3-img.indosatooredoo.com/dataprod/portalcontent/portal/images/metaimages/637391772578405884.png',
+            image: '/images/profile/h-purnomo-hadisaputro.jpg',
           },
           items: [],
         },
@@ -129,7 +129,7 @@ export default {
   },
 
   mounted() {
-    const response = profile
+    const response = profile.filter((item) => item.group !== 'founder')
     this.content.section3.items = response
 
     setTimeout(() => {
@@ -138,5 +138,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped></style>
