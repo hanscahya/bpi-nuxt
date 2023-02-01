@@ -2,12 +2,7 @@
   div.flex.flex-col
     div.mt-10.grid.grid-cols-2
       client-only
-        youtube(
-          video-id="xkWRN5-El5c"
-          :player-vars="{ autoplay: 1 }"
-          :player-width="documentWidth < 768 ? documentWidth : (documentWidth/2)"
-          class="col-span-2 md:col-span-1"
-        )
+        FitVideo
       div.p-5.flex.flex-col.justify-center(
         class="col-span-2 md:col-span-1 items-center md:items-start text-center md:text-left"
       )
@@ -70,6 +65,7 @@ import OneColumnContent from '@/components/OneColumnContent.vue'
 import TwoColumnsContent from '@/components/TwoColumnsContent.vue'
 import LargeProfile from '@/components/LargeProfile.vue'
 import ThumbnailProfile from '@/components/ThumbnailProfile.vue'
+import FitVideo from '@/components/FitVideo.vue'
 
 export default {
   components: {
@@ -77,13 +73,12 @@ export default {
     TwoColumnsContent,
     LargeProfile,
     ThumbnailProfile,
+    FitVideo,
   },
   mixins: [main],
 
   data() {
     return {
-      documentWidth: null,
-
       content: {
         section1: {
           title: 'Tentang Kami',
@@ -136,8 +131,6 @@ export default {
   mounted() {
     const response = profile
     this.content.section3.items = response
-
-    this.documentWidth = document.body.clientWidth
 
     setTimeout(() => {
       this.$store.commit('setLoading', false)
