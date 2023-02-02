@@ -1,6 +1,6 @@
 <template lang="pug">
   div.flex.flex-col
-    div.mt-10.grid.grid-cols-2
+    div.mt-10.grid.grid-cols-1(class="md:grid-cols-2")
       client-only
         FitVideo
       div.p-5.flex.flex-col.justify-center(
