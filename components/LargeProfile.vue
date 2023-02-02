@@ -1,9 +1,9 @@
 <template lang="pug">
   div.container.mx-auto.grid.grid-cols-5(
-    class="px-3 md:px-10 gap-0 md:gap-20"
+    class="px-3 md:px-10 gap-5 md:gap-20"
   )
     div.flex.flex-col.justify-center(
-      class="col-span-5 md:col-span-3"
+      class="col-span-5 md:col-span-3 row-start-2 md:row-start-1"
     )
       div.text-sm.font-black.text-blue-400 {{ label }}
       h1.mt-3 {{ title }}
