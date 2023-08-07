@@ -4,10 +4,10 @@
       swiper-slide(v-for="(item, contentIndex) in items" :key="contentIndex")
         div
           img.object-cover(
-            class="h-screen md:h-auto"
+            class="w-full"
             :src="item.image"
           )
-        div.absolute.inset-0.flex.flex-col.justify-center.items-center.text-white
+        //- div.absolute.inset-0.flex.flex-col.justify-center.items-center.text-white
           div.animate-title.text-center.mx-auto(class="w-5/6 md:w-4/6")
             div.text-5xl.font-black.text-shadow.py-3 {{ item.title.toUpperCase() }}
           div.mt-5.mx-auto.text-center.animate-subtitle(class="w-5/6 md:w-4/6")

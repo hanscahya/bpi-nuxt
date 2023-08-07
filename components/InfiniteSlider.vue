@@ -7,7 +7,7 @@
     swiper-slide(v-for="(item, contentIndex) in items" :key="contentIndex")
       div.mx-3.bg-white.flex.items-center.rounded-xl.animate
         img.p-2.mx-auto.object-contain(
-          class="w-20 md:w-40 h-20 md:h-40"
+          class="w-30 md:w-40 h-30 md:h-40"
           :src="item.image"
         )
 
@@ -47,7 +47,7 @@ export default {
   },
 
   mounted() {
-    if (document.body.clientWidth < 768) this.swiperOptions.slidesPerView = 3
+    if (document.body.clientWidth < 768) this.swiperOptions.slidesPerView = 2
     else this.swiperOptions.slidesPerView = 5
   },
 }

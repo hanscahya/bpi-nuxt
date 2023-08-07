@@ -59,36 +59,22 @@ export default {
       content: {
         slides: [
           {
-            image: '/images/slider/sekolah.jpg',
-            title: 'GENERAL CLEANING SERVICE SOLUTIONS',
-            subtitle: 'PT. Bangunpapan Idaman',
-            paragraph:
-              'PT. Bangunpapan Idaman menyediakan pelayanan kebersihan mulai dari:OB, Waitress, General Cleaning, dll..',
-            link: '',
+            image: '/images/slider/slide-1.png',
           },
           {
-            image: '/images/slider/rumah_sakit.jpg',
-            title: 'GREAT STAFF AND BACK OFFICE SUPPORT',
-            subtitle: 'PT. Bangunpapan Idaman',
-            paragraph:
-              'PT. Bangunpapan Idaman memiliki staff yang handal untuk mendukung operasional perusahaan, penanganan komplain, serta memiliki sistem enterprise guna menunjang operasional perusahaan.',
-            link: '',
+            image: '/images/slider/slide-2.png',
           },
           {
-            image: '/images/slider/staff-welcoming.jpg',
-            title: 'Great Corporate Client',
-            subtitle: 'PT. Bangunpapan Idaman',
-            paragraph:
-              'PT. Bangunpapan Idaman memiliki klien yang tersebar di daerah Jabodetabek. Mulai dari perusahaan, rumah sakit, kampus, pabrik, hingga ke perumahan elit.',
-            link: '',
+            image: '/images/slider/slide-3.png',
           },
           {
-            image: '/images/slider/gardener.jpg',
-            title: 'Technician Ready',
-            subtitle: 'PT. Bangunpapan Idaman',
-            paragraph:
-              'PT. Bangunpapan Idaman memiliki teknisi yang siap sedia didalam melakukan pemeliharaan peralatan cleaning. Petugas standby selama jam kerja dan siap melakukan on site support untuk area yang membutuhkan penanganan teknis.',
-            link: '',
+            image: '/images/slider/slide-4.png',
+          },
+          {
+            image: '/images/slider/slide-5.png',
+          },
+          {
+            image: '/images/slider/slide-6.png',
           },
         ],
         section1: {
@@ -96,24 +82,24 @@ export default {
             {
               title: 'PROFESSIONAL STAFF',
               paragraph:
-                'BPI memiliki staf yang ahli di bidangnya guna menjalankan kegiatan operasional kantor sehari-hari seperti accounting, pajak, hrd, dll',
-              image: '/icons/professional-staff.jpg',
+                'PT.BPI memiliki Tim dan staf yang ahli di bidangnya, baik pekerja di lapangan maupun di backoffice, hal ini yang menjadikan PT.BPI tetap menjadi pilihan utama bagi customer PT.BPI.',
+              image: '/images/IMG_3060.jpg',
               layout: 'default',
               link: '/',
             },
             {
               title: 'SAFETY & EXPERIENCE',
               paragraph:
-                'Semua staf cleaner, gondola, landscape, dll memiliki pengalaman yang baik dan dibekali keterampilan dengan dilakukan training secara regular',
-              image: '/icons/safety-experience.jpg',
+                'Seluruh staf PT.BPI baik gondola, cleaning service, landscape, dll selalu mengedepankan keselamatan kerja dan memiliki pengalaman yang baik juga dibekali keterampilan dengan diadakannya training secara regular',
+              image: '/images/gondola2.jpg',
               layout: 'reverse',
               link: '/',
             },
             {
               title: 'FAIR PRICES',
               paragraph:
-                'Selain tenaga ahli, BPI memiliki kelebihan dari segi sisi harga, harga yang kami tawarkan kompetitif serta berkualitas untuk skala enterprise',
-              image: '/icons/fair-prices.jpg',
+                'Salah satu keunguglan BPI adalah dari sisi harga, harga yang ditawarkan kompetitif namun tetap menjaga kualitas layanan untuk skala enterprise',
+              image: '/images/pexels-breakingpic-3305.jpg',
               layout: 'default',
               link: '/',
             },
@@ -125,7 +111,7 @@ export default {
           paragraph:
             'PT. Bangunpapan Idaman (BPI) adalah perusahaan yg bergerak dalam bidang spesialist penyedia jasa kebersihan (cleaning service) di indonesia.',
           image: '/images/logo.png',
-          bgImage: '/images/slider/cs.jpg',
+          bgImage: '/images/IMG_2953.jpg',
           buttonLink: '/about-us',
           buttonText: 'Read More',
         },
@@ -264,6 +250,14 @@ export default {
             {
               icon: '/images/iso-45001-logo.png',
               label: 'Occupational Health & safety management System',
+            },
+            {
+              icon: '/images/kadin.png',
+              label: 'Kamar Dagang Indonesia',
+            },
+            {
+              icon: '/images/abujapi.png',
+              label: 'Asosiasi Badan Usaha Jasa Pengamanan',
             },
           ],
         },
