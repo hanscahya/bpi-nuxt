@@ -96,7 +96,7 @@ export default {
               title: 'Visi',
               paragraph:
                 'MENJADI PERUSAHAAN PELAYANAN TERBAIK YANG MENJUNJUNG TINGGI PROFESIONALISME',
-              image: '/images/about-us-a.jpg',
+              image: '/images/about/pexels-fauxels-3184431.jpg',
               layout: 'default',
               link: '/',
             },
@@ -104,7 +104,7 @@ export default {
               title: 'Misi',
               paragraph:
                 '<ul class="list-decimal pl-5"><li>Menyediakan Pelayanan Kebersihan dan Keamanan yang Dapat Diandalkan</li><li>Melaksanakan Budaya Kerja yang Berlandaskan Kejujuran dan Profesionalisme</li><li>Meningkatkan dan Mengembangkan Kompetensi Sumber Daya Manusia</li></ul>',
-              image: '/images/about-us-b.jpg',
+              image: '/images/about/pexels-laura-tancredi-7078666.jpg',
               layout: 'reverse',
               link: '/',
             },
