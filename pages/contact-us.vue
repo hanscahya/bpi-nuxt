@@ -62,21 +62,30 @@
           b-icon(icon="telephone" font-scale="1.5")
           span(v-if="tel2") &emsp;Call Now
           span(v-else ) &emsp;021 22251128
-        div.py-5.flex.justify-center.items-center.border.rounded-xl.cursor-pointer.transition.duration-200.ease-in(
+        a.py-5.flex.justify-center.items-center.border.rounded-xl.cursor-pointer.transition.duration-200.ease-in(
+          class="hover:bg-gray-50 hover:shadow-md"
+          href="https://api.whatsapp.com/send/?phone=6281286163643"
+          @mouseover="tel3 = true"
+          @mouseleave="tel3 = false"
+        )
+          b-icon(icon="chat" font-scale="1.5")
+          span(v-if="tel3") &emsp;Chat on WhatsApp
+          span(v-else ) &emsp;+62-812-8616-3643
+        //- div.py-5.flex.justify-center.items-center.border.rounded-xl.cursor-pointer.transition.duration-200.ease-in(
           class="hover:bg-gray-50 hover:shadow-md"
           @click="windowOpen('https://facebook.com/profile.php?id=140078712676242', '_blank')"
-        )
+        //- )
           b-icon(icon="facebook" font-scale="1.5")
           span &emsp;Facebook
         a.py-5.flex.justify-center.items-center.border.rounded-xl.cursor-pointer.transition.duration-200.ease-in(
           class="hover:bg-gray-50 hover:shadow-md"
-          href="mailto:salessupport@bpioke.com"
+          href="mailto:sales@bpioke.com"
           @mouseover="em = true"
           @mouseleave="em = false"
         )
           b-icon(icon="envelope" font-scale="1.5")
           span(v-if="em") &emsp;Send Email
-          span(v-else ) &emsp;salessupport@bpioke.com
+          span(v-else ) &emsp;sales@bpioke.com
 
     //- div#mapbox.mt-20.px-20
 
@@ -115,6 +124,7 @@ export default {
 
       tel1: false,
       tel2: false,
+      tel3: false,
       em: false,
 
       map: null,
