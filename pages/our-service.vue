@@ -112,7 +112,7 @@ export default {
             bgColor: 'bg-gray-400',
           },
           {
-            title: 'Office Support',
+            title: 'Support Staff',
             icon: 'https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/ffffff/external-cleaning-stay-home-vitaliy-gorbachev-lineal-vitaly-gorbachev-1.png',
             bgColor: 'bg-blue-300',
 
