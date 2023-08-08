@@ -42,7 +42,7 @@
   {
     "id": "keistiyana-susilowati",
     "name": "Kristiyana Susilowati",
-    "label": "Finance and Accounting Manager",
+    "label": "Finance Manager",
     "image": "/images/profile/keistiyana-susilowati.jpg",
     "html1": "<div class=\"mb-3\">Meniti awal karir sebagai Staf Administrasi, Ibu Kristiyana Susilowati tekun belajar dan mencari tahu lebih dalam terkait dunia administrasi. Ia selalu mencoba menemukan dan belajar hal baru untuk diaplikasikan dalam pekerjaannya.</div><div class=\"mb-3\">Beliau menjabat sebagai Staf Administrasi selama 3 tahun, hal tersebut memberikannya pengalaman yang cukup mumpuni dalam penerapan ilmu administratif. Keinginan untuk berkembang terus dirasakan oleh beliau, beliau mulai mencoba hal yang lebih menantang.</div><div class=\"mb-3\">Keinginan mencoba hal baru dilakukan oleh beliau dengan menjadi Staf Finance & Accounting di PT Bangunpapan Indah. Beliau merupakan sosok yang bekerja penuh dengan ketekunan dan kerja keras. Selain itu beliau juga memiliki pribadi yang pantang menyerah.</div>",
     "html2": "<div class=\"mb-3\">Beliau akhirnya berhasil menjabat posisi FA Manager di PT. Bangunpapan Indah, berkat hasil kerja keras dan ketekunannya. Sampai dengan saat ini, beliau telah menjabat sebagai FA Manager selama kurang lebih 3 tahun lamanya.</div><div class=\"mb-3\">Aktivitas beliau sebagai FA Manager yaitu terjun langsung menangani Finance Administrative dan juga menangani bidang purchasing. Beliau juga membawahi dua divisi sekaligus yaitu Divisi Finance Administration dan Purchasing.</div><div class=\"mb-3\">Sampai dengan saat ini, beliau telah berkecimpung di bidang jasa selama kurang lebih 9 tahun lamanya. Beliau ingin mengabdikan ilmu dan pengetahuannya di bidang jasa khususnya di PT. Bangunpapan Indah, berkontribusi selalu, untuk membawa PT. Bangunpapan Indah terbang lebih tinggi.</div>",
@@ -50,12 +50,12 @@
     "group": "manager"
   },
   {
-    "id": "rosi-pradini-amd",
-    "name": "Rosi Pradini, Amd",
-    "label": "HR & GA Manager",
-    "image": "/images/profile/rosi-pradini-amd.jpg",
-    "html1": "<div class=\"mb-3\">Mengenyam pendidikan di Universitas Trisakti, dengan jurusan Akuntansi Perpajakan membuatnya tertarik untuk meniti karir di bidang perpajakan. Setelah menyelesaikan kuliah, Ibu Rosi Pradini mulai melamar kerja sebagai Junior Tax Staff.</div><div class=\"mb-3\">Bekerja sebagai Junior Tax Staff kurang lebih selama 2 tahun di PT Atri Distribusindo memberikan pengalaman dan ilmu yang cukup berharga bagi beliau. Tidak sampai di situ, beliau ingin mencoba memiliki karir yang lebih baik.</div><div class=\"mb-3\">Pada tahun 2012 akhirnya beliau melamar ke PT Bangunpapan Indah. Dengan ilmu yang dimilikinya, beliau mencoba memberikan yang terbaik untuk PT Bangunpapan Indah dengan usaha, kerja keras, serta ketekunan. Beliau menjabat sebagai Tax Staff di PT Bangunpapan Indah selama kurang lebih 4 tahun lamanya.</div>",
-    "html2": "<div class=\"mb-3\">Berkat kerja kerasnya, beliau kini menjabat sebagai HR & GA Manager di PT  Bangunpapan Indah. Beliau memiliki tanggung jawab untuk melakukan perhitungan dan pembayaran gaji karyawan, absensi dan cuti karyawan, kontrak kerja, dan bertanggung  jawab terhadap database karyawan, dan lainnya.</div><div class=\"mb-3\">Sampai dengan saat ini, beliau telah berkecimpung di dunia jasa selama 8 tahun, dimana 4 tahun tersebut beliau menjabat sebagai HR & GA Manager di PT Bangunpapan Indah. Baginya memberikan yang terbaik bagi perusahaan dimana ia bekerja merupakan suatu kebanggaan.</div><div class=\"mb-3\">Dengan kontribusi yang ia berikan, beliau berharap PT Bangunpapan Indah dapat terus berkembang dan mensejahterakan staf nya sehingga dapat menjadi tempat kerja yang nyaman bagi seluruh SDM-nya.</div>",
+    "id": "eri-windiyawati",
+    "name": "Eri Windiyawati",
+    "label": "HR & Legal",
+    "image": "/images/blank-img.png",
+    "html1": "",
+    "html2": "",
     "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah" ],
     "group": "manager"
   },

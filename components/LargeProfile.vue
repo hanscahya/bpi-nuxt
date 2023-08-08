@@ -5,7 +5,7 @@
     div.flex.flex-col.justify-center(
       class="col-span-5 md:col-span-3 row-start-2 md:row-start-1"
     )
-      div.text-sm.font-black.text-blue-400 {{ label }}
+      div.font-black.text-blue-400 {{ label }}
       h1.mt-3 {{ title }}
       p.mt-5.leading-loose(v-html="paragraph")
       button.mt-3.button-primary.w-60(v-if="button1Link" @click="$router.push(button1Link)") {{ button1Text }}

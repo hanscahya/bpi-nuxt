@@ -9,8 +9,8 @@
         div.text-3xl.font-black Tentang BPI
         div.mt-3.text-lg(class="w-10/12") Pengalaman dalam bidang standar kebersihan hotel membuat BPU menjadi perusahaan terbaik
 
-    div.mx-auto.my-10.text-center(class="w-10/12")
-      div.text-sm.font-black.text-blue-400 PT. Bangunpapan Idaman (BPI)
+    div.mx-auto.container.my-10.text-center(class="px-10 md:px-20 lg:px-40")
+      div.font-black.text-blue-400 PT. Bangunpapan Idaman (BPI)
       div.mt-5.leading-loose Perusahaan yg bergerak dalam bidang spesialist penyedia jasa kebersihan (cleaning service) di Indonesia. Yg mana saat ini memiliki jumlah pekerja lebih dari 3000 pekerja. Berdasarkan dengan akta pendirian perusahaan, PT. Bangunpapan Idaman (BPI) resmi didirikan pada tanggal 04 Agustus 2006. BPI sudah memiliki pengalaman lebih dari satu dekade menjadi partner setia klien-klien kami baik dari Apartemen, Perkantoran, RS, Pabrik, universitas, sekolah, pusat perbelanjaan dll, sejak pertama kali didirikan Di tahun 2006, selama 14 tahun beroperasi, BPI telah menjadi salah satu perusahaan penyedia layanan fasilitas yg profesional & mengutamakan kepuasan klien klien kami serta didukung dengan Sumber daya manusia yg dapat diandalkan & berlandaskan kejujuran & profesionalitas.
 
     div.py-10.container.self-center(class="px-0 md:px-20 lg:px-40")
@@ -37,17 +37,22 @@
       @click="$router.push(`/profile/${content.section3.highlight.id}`)"
     )
 
-    div.mx-auto.my-10.p-5.text-center
-      div.text-sm.font-black.text-blue-400 Jajaran Pimpinan
+    div.mx-auto.mt-10.p-5.text-center
+      div.font-black.text-blue-400 Jajaran Pimpinan
     ThumbnailProfile.mb-10(
       :items="content.section3.items.filter((item) => item.group === 'jajaran-pimpinan')"
     )
 
-    div.mx-auto.my-10.p-5.text-center
-      div.text-sm.font-black.text-blue-400 Manager
+    div.mx-auto.mt-10.p-5.text-center
+      div.font-black.text-blue-400 Manager
     ThumbnailProfile.mb-10(
       :items="content.section3.items.filter((item) => item.group === 'manager')"
     )
+
+    div.container.mx-auto.py-10.gap-4.grid(class="px-10 md:px-20 lg:px-40")
+      h3.font-black.text-blue-400 Legal Notice
+      div The information in this publication, including any text, images, and links, are provided "as is" by PT. Bangunpapan Indah solely for convenience to its customers without any warranty or guarantee of any kind, either express or implied, including but not limited to, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. PT. Bangunpapan Indah assumes no responsibility for errors or omissions in this publication or other documents which are referenced by or linked to this publication. This publication could include technical or other inaccuracies, and not all products or services referenced herein are available in all areas. Changes are periodically added to the information, and PT. Bangunpapan Indah may change the product or services described in this publication at any time. Contact PT. Bangunpapan Indah for further information before relying on any information contained herein.
+      div Should you choose to respond directly to PT. Bangunpapan Indah with comments, question, suggestion, ideas or the like relating to this website or products and BPI services, you agree that such information shall be deemed as non-confidential and BPI shall have no obligation to respond and be free to reproduce, use, disclose, and distribute the information to others without limitation, including but not limited to developing, manufacturing, and marketing products incorporating such information.
 
     //- div.mx-auto.my-10.p-5.text-center
     //-   div.text-sm.font-black.text-blue-400 Dokter Perusahaan
