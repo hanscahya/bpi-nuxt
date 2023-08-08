@@ -29,7 +29,7 @@
       div.p-5.text-white(v-if="!item.disabled")
         div.text-lg.font-bold {{ item.title }}
         div.mt-5(v-html="item.html")
-        Gallery.my-6(:images="item.galleryImages")
+        //- Gallery.my-6(:images="item.galleryImages")
         button.rounded-full(@click="item.active = false") Close
 
 </template>
