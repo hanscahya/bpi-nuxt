@@ -49,6 +49,12 @@
       :items="content.section3.items.filter((item) => item.group === 'manager')"
     )
 
+    div.mx-auto.mt-10.p-5.text-center
+      div.font-black.text-blue-400 Staff
+    ThumbnailProfile.mb-10(
+      :items="content.section3.items.filter((item) => item.group === 'staff')"
+    )
+
     div.container.mx-auto.py-10.gap-4.grid(class="px-10 md:px-20 lg:px-40")
       h3.font-black.text-blue-400 Legal Notice
       div The information in this publication, including any text, images, and links, are provided "as is" by PT. Bangunpapan Indah solely for convenience to its customers without any warranty or guarantee of any kind, either express or implied, including but not limited to, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. PT. Bangunpapan Indah assumes no responsibility for errors or omissions in this publication or other documents which are referenced by or linked to this publication. This publication could include technical or other inaccuracies, and not all products or services referenced herein are available in all areas. Changes are periodically added to the information, and PT. Bangunpapan Indah may change the product or services described in this publication at any time. Contact PT. Bangunpapan Indah for further information before relying on any information contained herein.
@@ -125,7 +131,7 @@ export default {
             button1Text: 'Baca Selengkapnya',
             button2Link: '',
             button2Text: 'Lihat Profil Direktur',
-            image: '/images/profile/h-purnomo-hadisaputro.jpg',
+            image: '/images/profile/h-purnomo-hadisaputro.png',
           },
           items: [],
         },
