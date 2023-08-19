@@ -4,7 +4,8 @@
       v-for="(item, itemIndex) in items"
       :key="itemIndex"
       class="w-12/12 md:w-3/12 md:mx-5"
-      @click="$router.push(`/profile/${item.id}`)"
+      :class="{ 'cursor-pointer': item.html1 !== null }"
+      @click="openDetailProfile(item)"
     )
       div
         div.text-xl.font-black {{ item.name }}
@@ -21,6 +22,12 @@ export default {
       default: null,
     },
   },
+  methods: {
+    openDetailProfile(item) {
+      if (!item.html1) return
+      this.$router.push(`/profile/${item.id}`)
+    },
+  },
 }
 </script>
 
@@ -31,7 +38,6 @@ export default {
   @apply border-gray-100;
   @apply rounded-xl;
   @apply shadow-xl;
-  @apply cursor-pointer;
 
   transition: all 0.5s ease;
 

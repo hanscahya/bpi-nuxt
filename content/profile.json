@@ -6,7 +6,7 @@
     "image": "/images/profile/h-purnomo-hadisaputro.png",
     "html1": "Dengan mengucapkan puji syukur kepada Tuhan yang Maha Esa serta dengan hormat kami haturkan terima kasih, kepada para relasi serta klien kami yang telah percaya menggunakan Jasa PT. Bangunpapan Idaman (BPI) sejak tahun 2006 hingga saat ini berdiri dengan kokoh.<br /> <br />Dalam satu dekade PT. Bangun Idaman (BPI) telah tumbuh menjadi perusahaan spesialist penyedia jasa kebersihan dan keamanan atau human capital resources provider yang telah memiliki banyak pengalaman di berbagai sektor industri di Indonesia.",
     "html2": "<div class=\"mb-3\">Semua aktivitas bisniskami didorong untuk menegakkan praktik-praktik tata kelola terupdate guna memberikan hasil terbaik dan akuntable serta kami akan terus berinovasi mengikuti perkembangan teknologi untuk tetap dapat di implementasikan dengan baik dan dengan daya manusia yang profesional, produktivitas tinggi dan berintegritas.</div><div class=\"mb-3\">Berdasarkan dengan hal ini menjadikan PT. Bangunpapan Idaman (BPI) unggul dalam menangani kebersihan dan keaman disertai komitmen untuk memberikan pelayanan dengan kualitas terbaik sehingga kami dapat memberikan solusi mengenai kebersihan dan keamanan secara profesional.</div>",
-    "related": [ "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah", "keistiyana-susilowati" ],
+    "related": [ "heru-ardiansyah", "kristiyana-susilowati", "asep-setiawan", "haerudin" ],
     "group": "founder"
   },
   {
@@ -14,9 +14,9 @@
     "name": "M.Fatah Andriansyah  S.Ikom",
     "label": "Vice President Director",
     "image": "/images/profile/m-fatah-andriansyah.png",
-    "html1": "-",
-    "html2": "-",
-    "related": [ "h-purnomo-hadisaputro", "hj-kartini-arjo", "heru-ardiansyah", "keistiyana-susilowati" ],
+    "html1": null,
+    "html2": null,
+    "related": null,
     "group": "jajaran-pimpinan"
   },
   {
@@ -24,9 +24,9 @@
     "name": "Hj. Kartini Arjo",
     "label": "Director & Chief Financial Officer",
     "image": "/images/profile/hj-kartini-arjo.png",
-    "html1": "-",
-    "html2": "-",
-    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "heru-ardiansyah", "keistiyana-susilowati" ],
+    "html1": null,
+    "html2": null,
+    "related": null,
     "group": "jajaran-pimpinan"
   },
   {
@@ -36,27 +36,27 @@
     "image": "/images/profile/heru-ardiansyah.png",
     "html1": "<div class=\"mb-3\">Sejak awal Bapak Heru Ardiansyah memiliki passion dalam berkomunikasi dengan customer, di awal karirnya beliau memulai karir dengan menjadi Sales Supervisor di Perusahaan Alat Berat. Tidak hanya bekerja, beliau memanfaatkan waktu tersebut untuk mengambil ilmu di lapangan.</div><div class=\"mb-3\">Berkat tekad dan ketekunannya dalam bekerja, beliau diangkat menjadi Senior Sales Supervisor di Perusahaan tersebut. Hal tersebut memberikannya tanggung jawab dan tugas lebih berat. Namun hal tersebut justru membuatnya terus bekerja lebih keras dan bekerja semaksimal mungkin hingga akhirnya beliau diangkat menjadi Kepala Cabang di Perusahaan tersebut.</div>",
     "html2": "<div class=\"mb-3\">Ketekunan dan keinginannya untuk belajar juga membuatnya melanjutkan pendidikan ke jenjang S2. Bekerja sambil kuliah merupakan sebuah tantangan bagi semua orang, tak terkecuali untuk Bapak Heru Ardiansyah. Namun beliau berhasil menyelesaikannya dengan baik.</div><div class=\"mb-3\">Kegigihan, usaha, serta kerja keras beliau berhasil membuatnya menempati posisi saat ini yaitu sebagai Chief Operating Officer di PT Bangunpapan Indah. Saat ini beliau menaungi 6 divisi di bawahnya, yaitu Divisi Finance, Accounting, HRGA, Sales, IT, dan Legal.</div><div class=\"mb-3\">Besarnya tanggung jawab yang dimiliki beliau membuatnya terpacu untuk bekerja lebih keras dan lebih gigih. Beliau sadar bahwa roda perusahaan membutuhkan kontribusi yang bukan sekedarnya. Berbekal 7 tahun pengalaman yang dimilikinya, PT Bangunpapan Indah optimis untuk melaju lebih jauh lagi.</div>",
-    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "keistiyana-susilowati" ],
+    "related": [ "h-purnomo-hadisaputro", "kristiyana-susilowati", "asep-setiawan", "haerudin" ],
     "group": "jajaran-pimpinan"
   },
   {
-    "id": "keistiyana-susilowati",
+    "id": "kristiyana-susilowati",
     "name": "Kristiyana Susilowati",
     "label": "Finance Manager",
     "image": "/images/profile/kristiyana-susilowati.png",
     "html1": "<div class=\"mb-3\">Meniti awal karir sebagai Staf Administrasi, Ibu Kristiyana Susilowati tekun belajar dan mencari tahu lebih dalam terkait dunia administrasi. Ia selalu mencoba menemukan dan belajar hal baru untuk diaplikasikan dalam pekerjaannya.</div><div class=\"mb-3\">Beliau menjabat sebagai Staf Administrasi selama 3 tahun, hal tersebut memberikannya pengalaman yang cukup mumpuni dalam penerapan ilmu administratif. Keinginan untuk berkembang terus dirasakan oleh beliau, beliau mulai mencoba hal yang lebih menantang.</div><div class=\"mb-3\">Keinginan mencoba hal baru dilakukan oleh beliau dengan menjadi Staf Finance & Accounting di PT Bangunpapan Indah. Beliau merupakan sosok yang bekerja penuh dengan ketekunan dan kerja keras. Selain itu beliau juga memiliki pribadi yang pantang menyerah.</div>",
     "html2": "<div class=\"mb-3\">Beliau akhirnya berhasil menjabat posisi FA Manager di PT. Bangunpapan Indah, berkat hasil kerja keras dan ketekunannya. Sampai dengan saat ini, beliau telah menjabat sebagai FA Manager selama kurang lebih 3 tahun lamanya.</div><div class=\"mb-3\">Aktivitas beliau sebagai FA Manager yaitu terjun langsung menangani Finance Administrative dan juga menangani bidang purchasing. Beliau juga membawahi dua divisi sekaligus yaitu Divisi Finance Administration dan Purchasing.</div><div class=\"mb-3\">Sampai dengan saat ini, beliau telah berkecimpung di bidang jasa selama kurang lebih 9 tahun lamanya. Beliau ingin mengabdikan ilmu dan pengetahuannya di bidang jasa khususnya di PT. Bangunpapan Indah, berkontribusi selalu, untuk membawa PT. Bangunpapan Indah terbang lebih tinggi.</div>",
-    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah" ],
+    "related": [ "h-purnomo-hadisaputro", "heru-ardiansyah", "asep-setiawan", "haerudin" ],
     "group": "manager"
   },
   {
     "id": "eri-windiyawati",
     "name": "Eri Windiyawati",
     "label": "HR & Legal",
-    "image": "/images/blank-img.png",
-    "html1": "",
-    "html2": "",
-    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah" ],
+    "image": "/images/profile/eri-windiyawati.png",
+    "html1": null,
+    "html2": null,
+    "related": null,
     "group": "manager"
   },
   {
@@ -66,7 +66,7 @@
     "image": "/images/profile/asep-setiawan.png",
     "html1": "<div class=\"mb-3\">Memulai karir di tahun 2002 sebagai cleaning service. Pengalaman di Perusahaan sebelumnya selama kurang lebih 5 tahun memberikannya kontribusi besar pada karir  beliau.</div><div class=\"mb-3\">Sampai dengan saat ini Bapak Asep Setiawan telah berkontribusi di bidang jasa selama 20 tahun. Bukan waktu yang sebentar untuk perjalanan karir. Namun semangat yang dimiliki Bapak Asep tidak pernah pudar dalam memberikan yang terbaik.</div>",
     "html2": "<div class=\"mb-3\">Bapak Asep memiliki pengalaman sebagai Cleaning Service, Team Leader, Supervisor, Chief Supervisor, Area Manager, hingga akhirnya kini menempati jabatan sebagai Operational Manager di PT. Bangunpapan Idaman.</div><div class=\"mb-3\">Dengan pengalaman selama kurang lebih 20 tahun, Bapak Asep telah menjalankan posisinya sebagai Operasional Manager kurang lebih 16 tahun lamanya. Saat ini, beliau  membawahi 25 project dan 782 manpower. Kontribusi beliau merupakan hal yang  siginifikan untuk perkembangan PT Bangunpapan Idaman saat ini dan seterusnya.</div>",
-    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah" ],
+    "related": [ "h-purnomo-hadisaputro", "heru-ardiansyah", "kristiyana-susilowati", "haerudin" ],
     "group": "manager"
   },
   {
@@ -76,7 +76,7 @@
     "image": "/images/profile/haerudin.png",
     "html1": "<div class=\"mb-3\">Memulai karir sebagai seorang cleaning service, Bapak Haerudin selalu yakin bahwa hasil tidak akan mengkhianati usaha. Berkarir sejak tahun 1994 membuat beliau memiliki pengaman yang cukup banyak terkait jasa cleaning service.</div><div class=\"mb-3\">Mengenyam pendidikan sampai dengan tingkat SMA, beliau memutuskan untuk melamar menjadi seorang cleaning service. Segala pekerjaan dilakukannya dengan penuh semangat dan senang hati.</div>",
     "html2": "<div class=\"mb-3\">Beliau memiliki tanggung jawab untuk memberikan briefing kepada tim di pagi hari, membuat laporan pekerjaan dan melakukan koordinasi dengan manajemen terkait kendala di lapangan.</div><div class=\"mb-3\">Semangat pantang menyerah, kerja keras, serta ketekunan yang dimiliki oleh beliau membuatnya bertahan di bidang jasa selama 28 tahun. Tidak sebentar untuk sebuah perjalanan karir dimana akhirnya beliau dapat menempati posisinya saat ini yaitu sebagai Operasional Manager di PT Bangunpapan Indah.</div><div class=\"mb-3\">Hingga saat ini, beliau telah membawahi 397 orang di PT Bangunpapan Indah. Dengan semangat dan ketekunan beliau, PT Bangunpapan Indah berharap dapat terus berkembang dan melangkah lebih jauh.</div>",
-    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah" ],
+    "related": [ "h-purnomo-hadisaputro", "heru-ardiansyah", "kristiyana-susilowati", "asep-setiawan" ],
     "group": "manager"
   },
   {
@@ -84,9 +84,9 @@
     "name": "dr. Nike Pebrica Purnamasari",
     "label": "Dokter Perusahaan",
     "image": "/images/blank-img.png",
-    "html1": "-",
-    "html2": "-",
-    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah" ],
+    "html1": null,
+    "html2": null,
+    "related": null,
     "group": "dokter-perusahaan"
   },
   {
@@ -94,9 +94,9 @@
     "name": "Reno Firdaus",
     "label": "Supervisor GA & Procurement",
     "image": "/images/profile/reno-firdaus.png",
-    "html1": "-",
-    "html2": "-",
-    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah" ],
+    "html1": null,
+    "html2": null,
+    "related": null,
     "group": "staff"
   },
   {
@@ -104,9 +104,9 @@
     "name": "Robert Wijayanto",
     "label": "IT Staff",
     "image": "/images/profile/robert-wijayanto.png",
-    "html1": "-",
-    "html2": "-",
-    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah" ],
+    "html1": null,
+    "html2": null,
+    "related": null,
     "group": "staff"
   },
   {
@@ -114,9 +114,19 @@
     "name": "Hani Junarsih",
     "label": "Tax & Accounting Specialist",
     "image": "/images/profile/hani-junarsih.png",
-    "html1": "-",
-    "html2": "-",
-    "related": [ "h-purnomo-hadisaputro", "m-fatah-andriansyah", "hj-kartini-arjo", "heru-ardiansyah" ],
+    "html1": null,
+    "html2": null,
+    "related": null,
+    "group": "staff"
+  },
+  {
+    "id": "m-toni",
+    "name": "M. Toni",
+    "label": "Specialist People Development",
+    "image": "/images/profile/m-toni.png",
+    "html1": null,
+    "html2": null,
+    "related": null,
     "group": "staff"
   }
 ]
