@@ -29,7 +29,7 @@
       div.p-5.text-white(v-if="!item.disabled")
         div.text-lg.font-bold {{ item.title }}
         div.mt-5(v-html="item.html")
-        Gallery.my-6(:images="item.galleryImages")
+        //- Gallery.my-6(:images="item.galleryImages")
         button.rounded-full(@click="item.active = false") Close
 
 </template>
@@ -112,7 +112,7 @@ export default {
             bgColor: 'bg-gray-400',
           },
           {
-            title: 'Office Support',
+            title: 'Support Staff',
             icon: 'https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/ffffff/external-cleaning-stay-home-vitaliy-gorbachev-lineal-vitaly-gorbachev-1.png',
             bgColor: 'bg-blue-300',
 

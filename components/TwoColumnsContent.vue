@@ -7,7 +7,7 @@
   )
     div.p-10.flex-1.flex.flex-col.justify-center(
       :class="layout === 'default'\
-        ? 'items-end text-right'\
+        ? 'md:items-end md:text-right'\
         : 'items-start text-left'"
     )
       h1.animate {{ title }}
@@ -15,10 +15,10 @@
 
     div.flex-1.flex.flex-col(
       :class="layout === 'default'\
-        ? 'items-start text-right'\
+        ? 'md:items-start md:text-right'\
         : 'items-end text-left'"
     )
-      img.animate.rounded-xl(class="w-10/12" :src="image")
+      img.animate.rounded-xl(class="mx-auto md:mx-0 w-10/12" :src="image")
 
 </template>
 
